@@ -23,13 +23,13 @@
 			<!-- Header -->
 			<div id="header" class="container_12" >		
 				<div id="slider" class="nivoSlider">
-					<img src="<?php print $this->themePath; ?>/images/slider/bg.png">
-					<img src="<?php print $this->themePath; ?>/images/slider/bg-2.png">
-					<img src="<?php print $this->themePath; ?>/images/slider/bg-3.png">
-					<img src="<?php print $this->themePath; ?>/images/slider/bg-4.png">
-					<img src="<?php print $this->themePath; ?>/images/slider/bg-5.png">
-					<img src="<?php print $this->themePath; ?>/images/slider/bg-6.png">
-					<img src="<?php print $this->themePath; ?>/images/slider/bg-7.png">
+					<img src="<?php print $this->themePath; ?>/images/slider/bg.png" />
+					<img src="<?php print $this->themePath; ?>/images/slider/bg-2.png" />
+					<!-- <img src="<?php print $this->themePath; ?>/images/slider/bg-3.png"> -->
+					<img src="<?php print $this->themePath; ?>/images/slider/bg-4.png" />
+					<img src="<?php print $this->themePath; ?>/images/slider/bg-5.png" />
+					<img src="<?php print $this->themePath; ?>/images/slider/bg-6.png" />
+					<img src="<?php print $this->themePath; ?>/images/slider/bg-7.png" />
 				</div>
 			</div>
 			

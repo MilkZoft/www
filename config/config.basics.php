@@ -9,28 +9,16 @@ if(!defined("_access")) {
 /**
  * General
  */
-<<<<<<< HEAD
-define("_wURL", "http://www.vision7.mx");
-define("_wName", "Vision 7");
-define("_wTheme", "vision7");
-=======
 define("_wURL", "http://localhost/vision7");
 define("_wName", "Tu Destino");
 define("_wTheme", "volcanes");
->>>>>>> be1f2eff2d45dc0e0d34158637ff2a442c755d85
 define("_wSituation", "Active");
 define("_wLanguage", "Spanish");
 define("_wLang", "es");
 
-<<<<<<< HEAD
-define("_domain", TRUE);
-define("_modRewrite", TRYE);
-define("_defaultApplication", "blog");
-=======
 define("_domain", FALSE);
 define("_modRewrite", FALSE);
 define("_defaultApplication", "pages");
->>>>>>> be1f2eff2d45dc0e0d34158637ff2a442c755d85
 define("_translation", "normal");
 define("_sh", "/");
 define("_dot", ".");

@@ -16,8 +16,8 @@ if($production) {
 	define("_dbController", "mysqli");
 	define("_dbHost", "localhost");
 	define("_dbUser", "muucmsco_muucms"); 
-	define("_dbPwd", "");
-	define("_dbName", "muucmsco_vision7");
+	define("_dbPwd", "Muu2182");
+	define("_dbName", "muucmsco_tudestino");
 	define("_dbPort", "5432");
 	define("_dbPfx", "muu_");
 	
@@ -33,7 +33,7 @@ if($production) {
 	define("_dbHost", "localhost");
 	define("_dbUser", "root"); 
 	define("_dbPwd", "");
-	define("_dbName", "muucms");
+	define("_dbName", "muucms_tourxvolcan");
 	define("_dbPort", "5432");
 	define("_dbPfx", "muu_");
 	
