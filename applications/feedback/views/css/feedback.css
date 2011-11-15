@@ -5,17 +5,37 @@
 	*/
 }
 
+.forms_feedback {
+	color: #000000;
+	text-align: justify !important;
+	background-image: url(../images/feedback-bg.png);
+	background-repeat: no-repeat;
+	margin-top: 15px;
+	margin: 0 auto;
+	text-align: center;
+}
+
 #info {
 	font-size: 14px;
 	color: #000;
 } 
+
+.send {
+	background-image: url(../images/enviar.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	display: block;
+	height: 54px;
+	width: 99px;
+	border: none;
+}
 
 .feedback fieldset {
 	border: none;
 	margin: 0 auto;
 }
 
-.feedback fieldset legend {
+#feedback fieldset legend {
 	display: none;
 }
 
