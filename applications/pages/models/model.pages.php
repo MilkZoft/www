@@ -72,13 +72,13 @@ class Pages_Model extends ZP_Model {
 		$data = array(
 			"ID_User"	 => SESSION("ZanUserID"),
 			"Slug"    	 => slug(POST("title", "clean")),
-			"Content" 	 => POST("content", "decode", "HTML"),
+			"Content" 	 => POST("content", "clean"),
 			"Start_Date" => now(4),
 			"Text_Date"	 => now(2)
 		);
-
+		
 		$this->data = $this->Data->proccess($data, $validations);
-
+		
 		if(isset($this->data["error"])) {
 			return $this->data["error"];
 		}
