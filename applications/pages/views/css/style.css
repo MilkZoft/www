@@ -6,6 +6,12 @@
 #pages {
 	color: #000000;
 	text-align: justify !important;
+	margin-top: 15px;
+}
+
+.pages {
+	color: #000000;
+	text-align: justify !important;
 	background-image: url(../images/bg-ubicacion.png);
 	margin-top: 15px;
 	height: 612px;

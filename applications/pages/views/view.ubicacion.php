@@ -1,6 +1,6 @@
 			<a name="top"></a>
 
-			<div id="pages" class="grid_9">		
+			<div id="pages" class="grid_9 pages">		
 				<h2>Transporte</h2>
 				
 				<div class="ubicacion-dec"></div>
