@@ -70,3 +70,8 @@ define("_top", "#top");
  */
 define("_secretKey", "_eh{Ll&}`<6Y\mg1Qw(;;|C3N9/7*HTpd7SK8t/[}R[vW2)vsPgBLRP2u(C|4]%m_");
 define("_super", "Super Admin");
+
+/**
+ * Auto render:
+ */
+define("_autoRender", FALSE);
