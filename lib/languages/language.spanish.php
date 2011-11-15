@@ -31,7 +31,7 @@ function translation($text) {
 		case "Courses": return "Cursos"; break;
 		case "Lodgings": return "Hospedaje"; break;
 		case "Ubication": return "ubicacion"; break;
-		
+		case "Facilities": return "Instalaciones"; break;
 		//Credits:
 		case "All rights reserved": return "Todos los derechos reservados"; break;
 		case "Powered by": return "Desarrollado por"; break;
