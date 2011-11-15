@@ -6,10 +6,22 @@
 #pages {
 	color: #000000;
 	text-align: justify !important;
-	/*
-	width: 98%;
-	margin: 0 auto;
-	*/
+	background-image: url(../images/bg-ubicacion.png);
+	margin-top: 15px;
+	height: 612px;
+}
+
+#pages h2 {
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#pages p {
+	margin-left: 30px;
+	margin-right: 50px;
+	margin-top: 10px;
+	font-size: 14px;
+	
 }
 	
 #pages a {
@@ -26,4 +38,11 @@
 
 .actions {
 	float: right;
+}
+
+.ubicacion-dec {
+	width: 618px;
+	height: 292px;
+	background-image: url(../images/ubicacion.jpg);
+	margin-left: 35px;
 }
