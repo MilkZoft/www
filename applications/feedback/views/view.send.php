@@ -9,9 +9,15 @@
 			<?php print isset($alert) ? $alert : NULL; ?>
 			
 			<p class="justify" id="info">
-				<?php 
-					print __("For more information, or simply send your comments, please fill out the form below and we will contact you as soon as possible."); 
-				?>
+				<strong><?php print __("Facilities");?> :</strong>
+				<?php print __("Km. 0.5 breha de la Yerbabuena al Volcán de Colima, La Yerbabuena, Ejido San Antonio, Comala, Colima."); ?>
+			</p>
+			
+			<p class="justify" id="info">
+				Tel: +52 (312) 323 4064 <br />
+				Cel: (312) 132  8113, (312)  109 3633 <br />
+				tourxvolcan@telmexmail.com <br />
+				<img src="" alt="Facebook" title="Facebook"/> <strong>Tour X Volcan</strong>
 			</p>
 						
 			<p class="field">&raquo; <?php print __("Name"); ?><br />
@@ -21,18 +27,7 @@
 			<p class="field">&raquo; <?php print __("E-Mail"); ?><br />
 				<input name="email" type="text" class="required" value="<?php print recoverPOST("email"); ?>" tabindex="2" />
 			</p>
-			
-			<p class="field">&raquo; <?php print __("Company"); ?><br />
-				<input name="company" type="text" value="<?php print recoverPOST("company"); ?>" tabindex="3" />
-			</p>
-			
-			<p class="field">&raquo; <?php print __("Phone"); ?><br />
-				<input name="phone" type="text" value="<?php print recoverPOST("phone"); ?>" tabindex="4" />
-			</p>
-			
-			<p class="field">&raquo; <?php print __("Subject"); ?><br />
-				<input name="subject" type="text" class="required" value="<?php print recoverPOST("subject"); ?>" tabindex="5" />
-			</p>										
+												
 		
 			<p class="field">&raquo; <?php print __("Message"); ?><br />
 				<textarea id="editor" name="message" class="required" tabindex="6">

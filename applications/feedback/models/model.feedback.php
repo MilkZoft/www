@@ -87,8 +87,6 @@ class Feedback_Model extends ZP_Model {
 			return getAlert("You need to write your name");
 		} elseif(!isEmail(POST("email"))) {
 			return getAlert("Invalid E-Mail");
-		} elseif(POST("subject") === NULL) {
-			return getAlert("You need to write a subject");
 		} elseif(POST("message") === NULL) {
 			return getAlert("You need to write a message");
 		}
@@ -96,9 +94,9 @@ class Feedback_Model extends ZP_Model {
 		$values = array(
 			"Name"   	 => POST("name"),
 			"Email"   	 => POST("email"),
-			"Company"	 => POST("company"),
-			"Phone" 	 => POST("phone"),
-			"Subject"  	 => POST("subject"),
+			"Company"	 => "",
+			"Phone" 	 => "",
+			"Subject"  	 => "",
 			"Message" 	 => POST("message", "decode", FALSE),
 			"Start_Date" => now(4),
 			"Text_Date"  => now(2)
