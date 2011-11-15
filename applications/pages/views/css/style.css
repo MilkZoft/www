@@ -57,7 +57,22 @@
 
 .item {
 	margin: auto !important;
-	height: 100px;
+	height: auto;
+}
+
+.item div {
+	height: 250px;
+	margin-bottom: 20px;
+	background-color: #FFF;
+	width: 85%;
+	padding: 10px;
+	text-align: center;
+}
+
+.item div span {
+	display: block;
+	font-size: 15px;
+	color: #36997D;
 }
 
 .push_10p {
