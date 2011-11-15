@@ -40,6 +40,12 @@ class Pages_Controller extends ZP_Controller {
 			$this->getByDefault();			
 		}		
 	}
+	private function getView($view = NULL) {
+		$view         = segment(2);
+		$vars["view"] = $this->view("$view", TRUE);
+		$this->template("content", $vars);			
+		$this->render();
+	}
 		
 	private function getBySlug($slug = NULL) {		
 		if($slug) {
