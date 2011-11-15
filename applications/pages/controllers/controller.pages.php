@@ -23,7 +23,17 @@ class Pages_Controller extends ZP_Controller {
 		$this->CSS("style", $this->application);
 		
 		if(isLang() and segment(2)) {
-			$this->getBySlug(segment(2));
+			if(segment(2) === "hospedaje") {
+				$this->getView(segment(2));
+			} elseif(segment(2) === "souvenirs") {
+				$this->getView(segment(2));
+			} elseif(segment(2) === "tours") {
+				$this->getView(segment(2));
+			} elseif(segment(2) === "ubicacion") {
+				$this->getView(segment(2));
+			} else {
+				$this->getBySlug(segment(2));
+			}
 		} elseif(!isLang() and segment(1)) {
 			$this->getBySlug(segment(1));		
 		} else {
