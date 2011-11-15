@@ -39,7 +39,9 @@
 }
 
 
-
+#main-container {
+	height: auto;
+}
 
 /* ---------------- Content ---------------- */
 #content {
@@ -68,6 +70,12 @@
 	text-align: center;
 	margin: auto;
 }
+
+#pages {
+	height: auto;
+	background
+}
+
 .header-post, .sub-header-post { 
 	display: block;
 	text-align: justify;
@@ -185,10 +193,6 @@
 .f2 { background-image: url(../images/2-2.png); }
 .f3 { background-image: url(../images/3-3.png); }
 .f4 { background-image: url(../images/4-4.png); }
-
-.bold {
-	font-weight: bold;
-}
 
 .uppercased {
 	text-transform: uppercase;
