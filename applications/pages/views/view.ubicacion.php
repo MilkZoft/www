@@ -22,8 +22,9 @@
 					un costo adicional de $300 por unidad con cupo máximo de 4 pasajeros y consistirá en el traslado de ida y vuelta a nuestras instalaciones.
 				</p>
 				
-				<p>¿Cómo llegar si te encuentras en Colima (mapa)?</p>
-				<p>¿Cómo llegar si te encuentras en Guadalajara o Manzanillo (mapa)?.</p>
+				<p class="margined green bold">¿Cómo llegar si te encuentras en Colima (mapa)?</p>
+				
+				<p class="green bold">¿Cómo llegar si te encuentras en Guadalajara o Manzanillo (mapa)?</p>
 			</div>
 			
 			
