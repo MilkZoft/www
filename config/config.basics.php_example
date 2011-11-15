@@ -9,16 +9,16 @@ if(!defined("_access")) {
 /**
  * General
  */
-define("_wURL", "http://localhost/tudestino");
-define("_wName", "Tu Destino");
-define("_wTheme", "vision7");
+define("_wURL", "http://localhost/volcanes");
+define("_wName", "TourxVolcan");
+define("_wTheme", "volcanes");
 define("_wSituation", "Active");
 define("_wLanguage", "Spanish");
 define("_wLang", "es");
 
 define("_domain", FALSE);
 define("_modRewrite", FALSE);
-define("_defaultApplication", "blog");
+define("_defaultApplication", "pages");
 define("_translation", "normal");
 define("_sh", "/");
 define("_dot", ".");
