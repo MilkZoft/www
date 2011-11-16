@@ -93,8 +93,6 @@ class CPanel_Controller extends ZP_Controller {
 		$this->vars["view"] = $this->view("add", TRUE, $this->application);
 		
 		$this->template("content", $this->vars);
-		
-		$this->render();
 	}
 	
 	public function delete($ID = 0) {
@@ -179,8 +177,6 @@ class CPanel_Controller extends ZP_Controller {
 			$this->vars["view"] = $this->view("add", TRUE, $this->application);
 			
 			$this->template("content", $this->vars);
-			
-			$this->render();
 		} else {
 			redirect(_webBase. _sh. _webLang. _sh. $this->application. _sh. _cpanel . _sh . _results);
 		}
@@ -244,7 +240,7 @@ class CPanel_Controller extends ZP_Controller {
 			}
 		}
 		
-		$total 		= $this->CPanel_Model->total($trash, "post", "posts");
+		$total 		= $this->CPanel_Model->total($trash);
 		$thead 		= $this->CPanel_Model->thead("checkbox, ". getFields($this->application) .", Action", FALSE);
 		$pagination = $this->CPanel_Model->getPagination($trash);
 		$tFoot 		= getTFoot($trash);
@@ -257,8 +253,6 @@ class CPanel_Controller extends ZP_Controller {
 		$this->vars["view"]       = $this->view("results", TRUE, _cpanel);
 		
 		$this->template("content", $this->vars);
-		
-		$this->render();
 	}
 	
 	public function trash($ID = 0) {
@@ -282,5 +276,4 @@ class CPanel_Controller extends ZP_Controller {
 			
 		$this->Library->upload();
 	}
-	
 }

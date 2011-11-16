@@ -94,8 +94,6 @@ class CPanel_Controller extends ZP_Controller {
 			$this->vars["view"] = $this->view("edit", TRUE, $this->application);
 			
 			$this->template("content", $this->vars);
-			
-			$this->render();
 		} else {
 			redirect(_webBase. _sh. _webLang. _sh. $this->application. _sh. _cpanel . _sh . _results);
 		}
@@ -119,86 +117,5 @@ class CPanel_Controller extends ZP_Controller {
 		$this->render("header", "footer");
 		
 		exit;
-	}
-	
-	public function restore($ID = 0) { 
-		if(!$this->isAdmin) {
-			$this->login();
-		}
-		
-		if($this->CPanel_Model->restore($ID)) {
-			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh . _cpanel . _sh . _results . _sh . _trash);
-		} else {
-			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh . _cpanel . _sh . _results);
-		}
-	}
-	
-	public function results() {
-		if(!$this->isAdmin) {
-			$this->login();
-		}
-		
-		$this->title("Manage ". $this->application);
-		$this->CSS("results", _cpanel);
-		$this->CSS("pagination");
-		$this->js("checkbox");
-		
-		$this->helper("inflect");		
-		
-		if(isLang()) {
-			if(segment(4) === "trash") {
-				$trash = TRUE;
-			} else {
-				$trash = FALSE;
-			}
-		} else {
-			if(segment(3) === "trash") {
-				$trash = TRUE;
-			} else {
-				$trash = FALSE;
-			}
-		}
-		
-		$singular = "post";
-		$plural   = "posts";
-		
-		$total 		= $this->CPanel_Model->total($trash, $singular, $plural);
-		$thead 		= $this->CPanel_Model->thead("checkbox, ". getFields($this->application) .", Action", FALSE);
-		$pagination = $this->CPanel_Model->getPagination($trash);
-		$tFoot 		= getTFoot($trash);
-		
-		$this->vars["message"]    = (!$tFoot) ? "Error" : NULL;
-		$this->vars["pagination"] = $pagination;
-		$this->vars["trash"]  	  = $trash;	
-		$this->vars["search"] 	  = getSearch(); 
-		$this->vars["table"]      = getTable(__("Manage " . ucfirst($this->application)), $thead, $tFoot, $total);					
-		$this->vars["view"]       = $this->view("results", TRUE, _cpanel);
-		
-		$this->template("content", $this->vars);
-		
-		$this->render();
-	}
-	
-	public function trash($ID = 0) {
-		if(!$this->isAdmin) {
-			$this->login();
-		}
-		
-		if($this->CPanel_Model->trash($ID)) {
-			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh . _cpanel . _sh . _results);
-		} else {
-			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh . _cpanel . _sh . _add);
-		}
-	}
-	
-	public function upload() {
-		if(!$this->isAdmin) {
-			$this->login();
-		}
-		
-		$this->Library = $this->classes("Library", _cpanel);	
-			
-		$this->Library->upload();
-	}
-	
+	}	
 }

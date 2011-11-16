@@ -9,16 +9,16 @@ if(!defined("_access")) {
 /**
  * General
  */
-define("_wURL", "http://localhost/volcanes");
-define("_wName", "TourxVolcan");
-define("_wTheme", "volcanes");
-define("_wSituation", "Active");
-define("_wLanguage", "Spanish");
-define("_wLang", "es");
+$config["wURL"]   		= "http://localhost/volcanes";
+$config["wName"]  		= "TourxVolcan";
+$config["wTheme"] 		= "volcanes";
+$config["wSituation"] 	= "Active";
+$config["wLanguage"]	= "Spanish";
+$config["wLang"]		= "es";
+$config["application"]  = "pages";
 
 define("_domain", FALSE);
 define("_modRewrite", FALSE);
-define("_defaultApplication", "pages");
 define("_translation", "normal");
 define("_sh", "/");
 define("_dot", ".");
@@ -74,4 +74,4 @@ define("_super", "Super Admin");
 /**
  * Auto render:
  */
-define("_autoRender", FALSE);
+define("_autoRender", TRUE);

@@ -24,7 +24,7 @@ class Blog_Controller extends ZP_Controller {
 		$helpers = array("router", "time");
 		$this->helper($helpers);
 				
-		$this->journal = TRUE;
+		$this->journal = FALSE;
 		
 		$this->Templates->theme(_webTheme);
 	}
@@ -106,8 +106,6 @@ class Blog_Controller extends ZP_Controller {
 	
 			$this->template("content", $vars);
 		} 
-		
-		$this->render();
 	}
 	
 	private function day() {
@@ -128,8 +126,6 @@ class Blog_Controller extends ZP_Controller {
 		} else {
 			$this->template("error404");
 		}
-		
-		$this->render();		
 	}
 	
 	private function month() {
@@ -153,8 +149,6 @@ class Blog_Controller extends ZP_Controller {
 			
 			$this->template("content", $vars);
 		}
-		
-		$this->render();		
 	}
 	
 	private function year() {
@@ -175,8 +169,6 @@ class Blog_Controller extends ZP_Controller {
 		} else {
 			$this->template("error404");
 		}
-		
-		$this->render();		
 	}
 
 	public function getLastPostByCategory($category) {
@@ -217,8 +209,6 @@ class Blog_Controller extends ZP_Controller {
 		} else {
 			$this->template("error404");
 		}
-
-		$this->render();
 	}
 	
 	public function tag($tag) {
@@ -237,8 +227,6 @@ class Blog_Controller extends ZP_Controller {
 		} else {
 			$this->template("error404");
 		}
-		
-		$this->render();
 	}
 	
 	private function slug() {	
@@ -307,11 +295,9 @@ class Blog_Controller extends ZP_Controller {
 		} else {
 			$this->template("error404");
 		}
-		
-		$this->render();
 	}
 	
-	private function last() { 
+	private function last() {
 		$this->title("Blog");
 		$this->CSS("posts", $this->application);
 		$this->CSS("pagination");
@@ -341,8 +327,6 @@ class Blog_Controller extends ZP_Controller {
 			
 			$this->template("content", $vars);				
 		}
-		
-		$this->render();
 	}
 	
 	private function limit($type = "posts") { 

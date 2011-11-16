@@ -485,7 +485,7 @@ class CPanel_Model extends ZP_Model {
 		return $return;
 	}
 	
-	public function total($trash = FALSE, $singular, $plural, $comments = FALSE) {
+	public function total($trash = FALSE, $singular = "record", $plural = "records", $comments = FALSE) {
 		$primaryKey = $this->Db->table($this->application);
 		
 		if(POST("seek")) {

@@ -83,8 +83,6 @@ class CPanel_Controller extends ZP_Controller {
 		$this->vars["view"] = $this->view("add", TRUE, $this->application);
 		
 		$this->template("content", $this->vars);
-		
-		$this->render();
 	}
 	
 	public function delete($ID = 0) {
@@ -140,10 +138,8 @@ class CPanel_Controller extends ZP_Controller {
 			$this->vars["view"] = $this->view("add", TRUE, $this->application);
 			
 			$this->template("content", $this->vars);
-			
-			$this->render();
 		} else {
-			redirect(_webBase. _sh. _webLang. _sh. $this->application. _sh. _cpanel . _sh . _results);
+			redirect(_webBase . _sh . _webLang . _sh . $this->application. _sh . _cpanel . _sh . _results);
 		}
 	}
 	
@@ -221,8 +217,6 @@ class CPanel_Controller extends ZP_Controller {
 		$this->vars["view"]       = $this->view("results", TRUE, _cpanel);
 		
 		$this->template("content", $this->vars);
-		
-		$this->render();
 	}
 	
 	public function trash($ID = 0) {
@@ -236,15 +230,4 @@ class CPanel_Controller extends ZP_Controller {
 			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh . _cpanel . _sh . _add);
 		}
 	}
-	
-	public function upload() {
-		if(!$this->isAdmin) {
-			$this->login();
-		}
-		
-		$this->Library = $this->classes("Library", _cpanel);	
-			
-		$this->Library->upload();
-	}
-	
 }

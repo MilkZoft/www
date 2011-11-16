@@ -30,23 +30,23 @@ $Load->helper($helpers);
 
 $Configuration_Model = $Load->model("Configuration_Model");
 
-$config = $Configuration_Model->getConfig();
+$data = $Configuration_Model->getConfig();
 
-if(is_array($config)) {
-	define("_webLanguage", 	   $config[0]["Language"]);
-	define("_webLang", 		   $config[0]["Lang"]);
-	define("_webName", 		   $config[0]["Name"]);
-	define("_webSlogan", 	   $config[0]["Slogan_". _webLanguage]);
-	define("_webURL", 		   $config[0]["URL"]);
-	define("_webTheme", 	   $config[0]["Theme"]);
-	define("_webGallery", 	   $config[0]["Gallery"]);
-	define("_webValidation",   $config[0]["Validation"]);
-	define("_webApplication",  $config[0]["Application"]);
-	define("_webMessage",      $config[0]["Message"]);
-	define("_webActivation",   $config[0]["Activation"]);
-	define("_webEmailRecieve", $config[0]["Email_Recieve"]);
-	define("_webEmailSend",    $config[0]["Email_Send"]);
-	define("_webSituation",    $config[0]["Situation"]);
+if(is_array($data)) {
+	define("_webLanguage", 	      $data[0]["Language"]);
+	define("_webLang", 		      $data[0]["Lang"]);
+	define("_webName", 		      $data[0]["Name"]);
+	define("_webSlogan", 	      $data[0]["Slogan_" . _webLanguage]);
+	define("_webURL", 		      $data[0]["URL"]);
+	define("_webTheme", 	      $data[0]["Theme"]);
+	define("_webGallery", 	      $data[0]["Gallery"]);
+	define("_webValidation",      $data[0]["Validation"]);
+	define("_webMessage",         $data[0]["Message"]);
+	define("_webActivation",      $data[0]["Activation"]);
+	define("_webEmailRecieve", 	  $data[0]["Email_Recieve"]);
+	define("_webEmailSend",    	  $data[0]["Email_Send"]);
+	define("_webSituation",    	  $data[0]["Situation"]);
+	define("_defaultApplication", $data[0]["Application"]);
 
 	if(!_modRewrite) {
 		define("_webBase", _webURL . _sh . _index);
@@ -54,14 +54,14 @@ if(is_array($config)) {
 		define("_webBase", _webURL);
 	}
 } else {
-	define("_webURL", 		 _wURL);
-	define("_webName", 		 _wName);
-	define("_webTheme", 	 _wTheme);
-	define("_webSituation",  _wSituation);
-	define("_webLanguage",   _wLanguage);
-	define("_webLang", 		 _wLang);
-	define("_webApplicaion", _defaultApplication);
-	define("_webEmailSend",  _wEmailSend);
+	define("_webURL", 		 	  $config["wURL"]);
+	define("_webName", 		 	  $config["wName"]);
+	define("_webTheme", 	 	  $config["wTheme"]);
+	define("_webSituation",  	  $config["wSituation"]);
+	define("_webLanguage",   	  $config["wLanguage"]);
+	define("_webLang", 		 	  $config["wLang"]);
+	define("_defaultApplication", $config["application"]);
+	define("_webEmailSend",  	  _wEmailSend);
 	
 	if(!_modRewrite) {
 		define("_webBase", _wURL . _sh . _index);
