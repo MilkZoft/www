@@ -5,6 +5,7 @@
 }
 
 #pages h2 {
+	color: #859642;
 	font-size: 1.5em;
 	margin: 0;
 	margin-left: 30px;
@@ -13,6 +14,8 @@
 
 #pages h3 { 
 	font-size: 1.2em;
+	margin-left: 30px;
+	margin-top: 20px;
 }
 
 

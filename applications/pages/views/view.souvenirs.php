@@ -23,37 +23,58 @@
 					</div>
 					
 					<div>
-						<img src="<?php print $imagesPath."nopal.png"; ?>">
+						<img src="<?php print $imagesPath."nopal.png"; ?>" />
+						<span class="bold">
+							<span class="uppercased">Nopal</span> Acuarela 40x35 cm $300
+						</span>
 					</div>
 					
 				</div>
 				
 				<div class="item grid_3">
 					<div>
-						<img src="<?php print $imagesPath."jarro.png"; ?>">
+						<img src="<?php print $imagesPath."jarro.png"; ?>" />
+						<span class="bold">
+							<span class="uppercased">Jarro</span> (3 piezas) Barro $200
+						</span>
 					</div>
 					
 					<div>
-						<img src="<?php print $imagesPath."ave.png"; ?>">
+						<img src="<?php print $imagesPath."ave.png"; ?>" />
+						<span class="bold">
+							<span class="uppercased">Corre-Camino</span> Tallado en Madera $250
+						</span>
 					</div>
 					
 					<div>
-						<img src="<?php print $imagesPath."montana.png"; ?>">
+						<img src="<?php print $imagesPath."montana.png"; ?>" />
+						<span class="bold">
+							<span class="uppercased">Montañas</span> Acrílica 60x40 cm $300
+						</span>
 					</div>
 					
 				</div>
 				
 				<div class="item grid_3">
 					<div>
-						<img src="<?php print $imagesPath."solyluna.png"; ?>">
+						<img src="<?php print $imagesPath."solyluna.png"; ?>" />
+						<span class="bold">
+							<span class="uppercased">Sol y Luna</span> Barro $60
+						</span>
 					</div>
 					
 					<div>
-						<img src="<?php print $imagesPath."cocina.png"; ?>">
+						<img src="<?php print $imagesPath."cocina.png"; ?>" />
+						<span class="bold">
+							<span class="uppercased">Cocina</span> Acrílica sobre cristal 36x28 cm $200
+						</span>
 					</div>
 					
 					<div>
-						<img src="<?php print $imagesPath."callejon.png"; ?>">
+						<img src="<?php print $imagesPath."callejon.png"; ?>" />
+						<span class="bold">
+							<span class="uppercased">Callejón</span> Acuarela 35x40 cm $200
+						</span>
 					</div>
 					
 				</div>
