@@ -4,17 +4,20 @@
 		<meta charset="utf-8" />
 		<title><?php print $this->getTitle();?></title>
 		
-		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/style.css" type="text/css">
 		
-		<?php #$this->CSS("polls", "polls"); ?>
-		<?php print $this->getCSS(); ?>
-		<?php print $this->js("www/lib/scripts/js/jquery.js", NULL, NULL, TRUE);?>
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/reset.css" />
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/text.css" />
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/960.css" />
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/demo.css" />
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/styles.css" />
-		</head>
+		
+		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/style.css" type="text/css">
+		
+		<?php #$this->CSS("polls", "polls"); ?>
+		<?php print $this->getCSS(); ?>
+		<?php print $this->js("www/lib/scripts/js/jquery.js", NULL, NULL, TRUE);?>
+		
+	</head>
 	<body>
 		
 		<!-- Main Container -->

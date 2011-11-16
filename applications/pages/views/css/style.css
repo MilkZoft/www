@@ -64,12 +64,17 @@
 }
 
 .item div {
-	height: 250px;
+	height: 280px;
 	margin-bottom: 20px;
 	background-color: #FFF;
 	width: 85%;
 	padding: 10px;
 	text-align: center;
+}
+
+.item div .image {
+	height: 180px;
+	background-color: transparent;
 }
 
 .item div span {
@@ -81,3 +86,49 @@
 .push_10p {
 	margin-left: 35px !important;
 }
+
+/* --- view.hospedaje ---*/
+#hospedaje-1 { background-image: url(../images/hospedaje-1.png); }
+#hospedaje-2 { background-image: url(../images/hospedaje-2.png); }
+#hospedaje-3 { background-image: url(../images/hospedaje-3.png); }
+#hospedaje-1 p, #hospedaje-2 p, #hospedaje-3 p  { margin-left: 400px; }
+
+#hospedaje-1, #hospedaje-2, #hospedaje-3 {
+	background-repeat: no-repeat;
+	height: 393px;
+}
+
+#hospedaje-1 ul, #hospedaje-2 ul, #hospedaje-3 ul {
+	margin-left: 380px;
+	padding-top: 60px;
+	color: #5E4D31;
+	list-style: none;
+	font-size: 13px;
+}
+
+/* --- view.tours ---*/
+#tour-1 { background-image: url(../images/t1.png); }
+#tour-2 { background-image: url(../images/t2.png); }
+#tour-3 { background-image: url(../images/t3.png); }
+
+#tour-1, #tour-2, #tour-3 {
+	background-repeat: no-repeat;
+	height: 559px;
+}
+
+#tour-2 {
+	height: 650px;
+}
+
+
+table { margin-top: -10px; }
+
+table td {
+	font-size: 13px;
+	padding-left: 30px;
+}
+
+.tour-top p, .tour-bottom p {  font-size: 13px !important; }
+.tour-top { padding-top: 45px; }
+.tour-top2 { padding-top: 55px; }
+.tour-bottom { margin-top: -20px; }
