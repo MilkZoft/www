@@ -51,8 +51,6 @@ class CPanel_Controller extends ZP_Controller {
 		$this->vars["view"] 	 = $this->view("home", TRUE);
 		
 		$this->template("content", $this->vars);
-		
-		$this->render();
 	}
 	
 	public function login() {
