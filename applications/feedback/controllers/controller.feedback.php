@@ -35,7 +35,5 @@ class Feedback_Controller extends ZP_Controller {
 			$this->vars["view"] = $this->view("send", TRUE);
 			$this->template("content", $this->vars);		
 		}
-		
-		$this->render();
 	}
 }

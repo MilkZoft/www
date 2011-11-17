@@ -200,8 +200,6 @@ class CPanel_Controller extends ZP_Controller {
 		$this->vars["view"]       = $this->view("results", TRUE, _cpanel);
 		
 		$this->template("content", $this->vars);
-		
-		$this->render();
 	}
 	
 	public function trash($ID = 0) {

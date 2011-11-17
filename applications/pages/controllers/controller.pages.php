@@ -44,7 +44,6 @@ class Pages_Controller extends ZP_Controller {
 		$view         = segment(2);
 		$vars["view"] = $this->view("$view", TRUE);
 		$this->template("content", $vars);			
-		$this->render();
 	}
 		
 	private function getBySlug($slug = NULL) {		
@@ -81,8 +80,6 @@ class Pages_Controller extends ZP_Controller {
 		} else {
 			$this->template("error404");
 		}
-		
-		$this->render();
 	}
 	
 	private function getByDefault() {		
@@ -99,7 +96,5 @@ class Pages_Controller extends ZP_Controller {
 		} else {
 			$this->template("error404");
 		}
-		
-		$this->render();
 	}
 }
