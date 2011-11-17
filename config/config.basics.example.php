@@ -9,7 +9,7 @@ if(!defined("_access")) {
 /**
  * General
  */
-$config["wURL"]   		= "http://localhost/volcanes";
+$config["wURL"]   		= "http://tourxvolcan.com";
 $config["wName"]  		= "TourxVolcan";
 $config["wTheme"] 		= "volcanes";
 $config["wSituation"] 	= "Active";
@@ -17,8 +17,8 @@ $config["wLanguage"]	= "Spanish";
 $config["wLang"]		= "es";
 $config["application"]  = "pages";
 
-define("_domain", FALSE);
-define("_modRewrite", FALSE);
+define("_domain", TRUE);
+define("_modRewrite", TRUE);
 define("_translation", "normal");
 define("_sh", "/");
 define("_dot", ".");
