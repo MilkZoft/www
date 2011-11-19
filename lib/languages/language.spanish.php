@@ -26,7 +26,7 @@ function translation($text) {
 		case "Technologies": return "Tecnologías"; break;
 		case "Call us at": return "Llamanos"; break;
 		case "Newsletter": return "Suscribete"; break;
-		case "Special packages": return "Paquetes especiales"; break;
+		case "Special combos": return "Paquetes especiales"; break;
 		case "Alimentation": return "Alimentación"; break;
 		case "Courses": return "Cursos"; break;
 		case "Lodgings": return "Hospedaje"; break;
