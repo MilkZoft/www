@@ -34,7 +34,13 @@ $data = $Configuration_Model->getConfig();
 
 if(is_array($data)) {
 	define("_webLanguage", 	      $data[0]["Language"]);
-	define("_webLang", 		      $data[0]["Lang"]);
+
+	if(whichLanguage() === _webLanguage) { 
+		define("_webLang", $data[0]["Lang"]);
+	} else {
+		define("_webLang", getXMLang(whichLanguage(), FALSE));
+	}
+
 	define("_webName", 		      $data[0]["Name"]);
 	define("_webSlogan", 	      $data[0]["Slogan_" . _webLanguage]);
 	define("_webURL", 		      $data[0]["URL"]);

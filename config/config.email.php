@@ -10,8 +10,8 @@ if(!defined("_access")) {
  * E-Mail
  */
 
-define("_gUser", "caarloshugo@gmail.com");
-define("_gPwd", "Agosto1721");
+define("_gUser", "");
+define("_gPwd", "");
 define("_gSSL", "ssl://smtp.gmail.com");
 define("_gPort", 465);
 define("_wEmailSend", "webmaster@milkzoft.com");

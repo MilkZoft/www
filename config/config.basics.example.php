@@ -9,16 +9,16 @@ if(!defined("_access")) {
 /**
  * General
  */
-$config["wURL"]   		= "http://tourxvolcan.com";
-$config["wName"]  		= "TourxVolcan";
-$config["wTheme"] 		= "volcanes";
+$config["wURL"]   		= "http://localhost/MuuCMS";
+$config["wName"]  		= "MuuCMS";
+$config["wTheme"] 		= "zanphp";
 $config["wSituation"] 	= "Active";
 $config["wLanguage"]	= "Spanish";
 $config["wLang"]		= "es";
-$config["application"]  = "pages";
+$config["application"]  = "blog";
 
-define("_domain", TRUE);
-define("_modRewrite", TRUE);
+define("_domain", FALSE);
+define("_modRewrite", FALSE);
 define("_translation", "normal");
 define("_sh", "/");
 define("_dot", ".");
