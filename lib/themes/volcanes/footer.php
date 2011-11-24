@@ -34,7 +34,11 @@
 		$this->js("js/pretty-photo", "videos"); 
 		print $this->getJs();
 		?> 
-		
+		<script type="text/javascript">
+			$(document).ready( function () {
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
 	</body>
 
 </html>

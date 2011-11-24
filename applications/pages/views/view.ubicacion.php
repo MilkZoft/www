@@ -23,7 +23,7 @@
 				</p>
 				
 				<p class="margined green bold">¿Cómo llegar si te encuentras en Colima (mapa)?</p>
-				
+			
 				<p class="green bold">¿Cómo llegar si te encuentras en Guadalajara o Manzanillo (mapa)?</p>
 			</div>
 			
