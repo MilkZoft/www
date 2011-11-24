@@ -3,7 +3,7 @@
 			<div id="pages" class="grid_9 pages">		
 				<h2>Transporte</h2>
 				
-				<div class="ubicacion-dec"></div>
+				<div class="ubicacion-dec">hello</div>
 				
 				<p>
 					El transporte para los tour es provisto por nuestra empresa. <br />
