@@ -25,8 +25,6 @@ class Pages_Controller extends ZP_Controller {
 		if(isLang() and segment(2)) {
 			if(segment(2) === "souvenirs") {
 				$this->getView(segment(2));
-			} elseif(segment(2) === "ubicacion") {
-				$this->getView(segment(2));
 			} else {
 				$this->getBySlug(segment(2));
 			}
