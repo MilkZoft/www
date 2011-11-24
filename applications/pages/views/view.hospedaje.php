@@ -1,68 +1,59 @@
 			<a name="top"></a>
 
 			<div id="pages" class="grid_9">		
-				<h2>Chalets, Refugios y Cabañas</h2>
+				<h2>Chalets, cabains and shelters</h2>
 				
 				<p>
-					Nuestras cabañas elaboradas con materiales de la región y con un diseño único que preferencia <br />
-					la arquitectura vernácula propia del municipio de Comala contienen además preceptos y <br />
-					adecuaciones bioclimáticas que permiten al huésped gozar de un confort térmico que se hace <br />
-					necesario en las frías noches de las zonas montañosas.
+					We have used reginal materials and our facilities are built to fit the local climate and waether<br />
+					conditions, We seccessfuly maximized thermal confort inside the lodge and minimized the <br />
+					negative impact of the buildings to the environment through enhancing the efficiency and <br />
+					moderation in the use of materials, energy and space.
 				</p>
+	
 				
-				<p class="bold">
-					Incluir desayuno, comida y cena con vegetales orgánicos (recomendado) + $240.00 por persona.
-				</p>
-				
-				<p> Véase <span class="uppercased">Ubicación</span></p>
+				<p> See <span class="uppercased">TRANSPORTATION</span></p>
 				
 				<div id="hospedaje-1">
 					<ul>
-						<li>- Capacidad 7-10 personas</li>
-						<li>- Cuenta con terraza</li>
-						<li>- Porche</li>
-						<li>- 2 habitaciones</li>
-						<li>- Cocina-comedor</li>
-						<li>- Sala de estar con chimenea</li>
-						<li>- Instalaciones sanitarias propias</li>			
+						<li>- Bed for up to 7 people</li>
+						<li>- Porch and terrace</li>
+						<li>- 2 bedrooms</li>
+						<li>- Hall with fireplace</li>
+						<li>- Private bathroom</li>
+						<li>- Kitchen and dinner</li>
 					</ul>
 					
 					<p class="green">
-						<span class="bold">Precio: $1800 por 7 personas, <br />
-						persona extra $180 </span> <br />
-						Incluir desayuno, comida y cena con <br />
-						vegetales orgánicos (recomendado) <br />
-						+ $240.00 por persona 
+						<span class="bold">Price: US $150.00 for 7 people, <br />
+						$15.00 for each extra person. </span> <br />
 					</p>	
 				</div>
 				
 				<div id="hospedaje-2">
 					<ul>
-						<li>- Capacidad nominal de 8-10 personas</li>
-						<li>- 2 habitaciones</li>
-						<li>- Porche con vista al volcán</li>
-						<li>- Sala</li>
-						<li>- Comedor al aire libre</li>
+						<li>- Bed up to 8 people</li>
+						<li>- 2 bedrooms</li>
+						<li>- Volcano view porch</li>
+						<li>- Foyer</li>
 					</ul>
 					
 					<p class="green">
-						<span class="bold">Precio: $900 por 8 personas, <br />
-						persona extra $120 </span> 
+						<span class="bold">Price: US $75.00 for 8 people, <br />
+						$10.00 extra person</span> 
 					</p>	
 				</div>
 				
 				<div id="hospedaje-3">
 					<ul>
-						<li>- Capacidad nominal de 6-10 personas</li>
-						<li>- 3 habitaciones</li>
-						<li>- Porche con vista al volcán</li>
-						<li>- Sala de estar</li>
-						<li>- Comedor al aire libre</li>
+						<li>- For 6 people</li>
+						<li>- 2 bedrooms and a king size bed on the attic</li>
+						<li>- Volcano view porch</li>
+						<li>- Foyer</li>
 					</ul>
 					
 					<p class="green">
-						<span class="bold">Precio: $900 por 8 personas, <br />
-						persona extra $120 </span> 
+						<span class="bold">Price: US $75.00 for  6 people, <br />
+						$10.00 for each extra person up to 10</span> 
 					</p>	
 				</div>
 				
