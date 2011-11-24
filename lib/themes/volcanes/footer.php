@@ -32,6 +32,7 @@
 		<?php 
 		print getScript("nivo-slider");
 		$this->js("js/pretty-photo", "videos"); 
+		$this->js("js/jquery.prettyPhoto", "videos");
 		print $this->getJs();
 		?> 
 		<script type="text/javascript">
