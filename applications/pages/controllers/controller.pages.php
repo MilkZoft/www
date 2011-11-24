@@ -27,8 +27,6 @@ class Pages_Controller extends ZP_Controller {
 				$this->getView(segment(2));
 			} elseif(segment(2) === "souvenirs") {
 				$this->getView(segment(2));
-			} elseif(segment(2) === "tours") {
-				$this->getView(segment(2));
 			} elseif(segment(2) === "ubicacion") {
 				$this->getView(segment(2));
 			} else {
