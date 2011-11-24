@@ -23,12 +23,16 @@
 		<!-- Main Container -->
 		<div id="main-container" class="container_12">
 			
+			
 			<!-- Header -->
-			<div id="header" class="container_12" >		
+			<div id="header" class="container_12" >	
+				<div class="language en"><a href="<?print _webURL._sh."en";?>"></a></div>
+				<div class="language es"><a href="<?print _webURL._sh."es";?>"></a></div>
+				
 				<div id="slider" class="nivoSlider">
 					<img src="<?php print $this->themePath; ?>/images/slider/bg.png" />
 					<img src="<?php print $this->themePath; ?>/images/slider/bg-2.png" />
-					<!-- <img src="<?php print $this->themePath; ?>/images/slider/bg-3.png"> -->
+					<img src="<?php print $this->themePath; ?>/images/slider/bg-3.png" />
 					<img src="<?php print $this->themePath; ?>/images/slider/bg-4.png" />
 					<img src="<?php print $this->themePath; ?>/images/slider/bg-5.png" />
 					<img src="<?php print $this->themePath; ?>/images/slider/bg-6.png" />
@@ -39,12 +43,12 @@
 			<!-- Menu -->
 			<div id="menu" class="container_12">
 				<ul class="container_12">
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Home"));?>"><?php print  __("Home");?></a></li>
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Tours"));?>"><?php print  __("Tours");?></a></li>
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Lodgings"));?>"><?php print  __("Lodgings");?></a></li>
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Ubication"));?>"><?php print  __("Ubication");?></a></li>
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Courses"));?>"><?php print  __("Courses");?></a></li>
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "feedback";?>"><?php print  __("Feedback");?></a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Home"));?>">Inicio</a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Tours"));?>">Tours</a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Lodgings"));?>">Hospedaje</a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Ubication"));?>">Ubicación</a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Courses"));?>">Cursos</a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "feedback";?>">Contacto</a></li>
 				</ul>
 				
 			</div>

@@ -82,6 +82,24 @@
 	color: #737F31;
 }
 
+.language {   
+	width: 50px; 
+	height: 30px;
+	position: absolute;
+	z-index: 6; 
+}
+
+.language a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: red;
+}
+
+.en { margin: 10px 900px; }
+.es { margin: 10px 845px; }
+
+
 /* ---------------- Siderbar ---------------- */
 
 #sidebar-header {
