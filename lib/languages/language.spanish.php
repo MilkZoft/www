@@ -37,7 +37,7 @@ function translation($text) {
 		case "Powered by": return "Desarrollado por"; break;
 		
 		case "Cabin Rental" : "Renta de Cabañas"; break;
-		case "Tours" : "Tours" break;
+		case "Tours" : "Tours"; break;
 		case "Construction of Eco-cabins" : "Construcción de Cabañas Ecológicas"; break;
 		case "Construction of tree little houses" : "Construcción de Casitas de juego"; break;
 		case "Construction of Green roofs" : "Cubiertas verdes"; break;
