@@ -45,6 +45,7 @@ function translation($text) {
 		case "Ask" : "Pregunta por"; break;
 		case "For Our" : "Nuestras"; break;
 		case "Promotions" : "Promociones"; break;
+		case "Crafts and painting" : "Artesanías y pinturas"; break;
 		
 		//Applications:
 		case "Add": return "Agregar"; break;
