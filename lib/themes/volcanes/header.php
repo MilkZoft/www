@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title><?php print $this->getTitle();?></title>
+		<title><?php print utf8_decode($this->getTitle());?></title>
 		
 		
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/reset.css" />
