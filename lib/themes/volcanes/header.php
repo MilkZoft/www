@@ -4,9 +4,14 @@
 		<meta charset="utf-8" />
 		<title><?php print utf8_decode($this->getTitle());?></title>
 		
+		
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/reset.css" />
+		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/text.css" />
+		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/960.css" />
+		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/demo.css" />
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/styles.css" />
 		
+		<?php #$this->CSS("polls", "polls"); ?>
 		<?php print $this->getCSS(); ?>
 		<?php print $this->js("www/lib/scripts/js/jquery.js", NULL, NULL, TRUE);?>
 		
