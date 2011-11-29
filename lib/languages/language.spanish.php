@@ -30,19 +30,14 @@ function translation($text) {
 		case "Alimentation": return "Alimentación"; break;
 		case "Courses": return "Cursos"; break;
 		case "Lodgings": return "Hospedaje"; break;
-		case "Ubication": return "ubicacion"; break;
-		case "Facilities": return "Instalaciones"; break;
+		case "Ubication": return "ubicación"; break;
+		case "Who are we?": return "¿Quiénes Somos?"; break;
+		case "Affiliates": return "Afiliate"; break;
+		case "Start": return "Inicio"; break;
+		case "Directory": return "Directorio"; break;
+		case "Read more": return "Leer más"; break;
+		case "Privacy Policy": return "Politica de privacidad"; break;
 		
-		case "Cabin Rental": return "Renta de Cabañas"; break;
-		case "Tours": return "Tours"; break;
-		case "Construction of Eco-cabins": return "Construcción de Cabañas Ecológicas"; break;
-		case "Construction of tree little houses": return  "Construcción de Casitas de juego"; break;
-		case "Construction of Green roofs": return "Cubiertas verdes"; break;
-		case "Organic products and handcraft": return "Productos orgánicos y artesanales"; break;
-		case "Ask": return "Pregunta por"; break;
-		case "For Our" : return "Nuestras"; break;
-		case "Promotions" : return "Promociones"; break;
-		case "Crafts and painting" : return "Artesanías y pinturas"; break;
 		
 		//Credits:
 		case "All rights reserved": return "Todos los derechos reservados"; break;
