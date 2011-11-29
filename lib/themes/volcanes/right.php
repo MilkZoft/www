@@ -3,7 +3,7 @@
 					<div id="sidebar-header"></div>
 					<div id="sidebar-menu">
 						<ul>
-							<li class="bordered"><a>* <?php print __("Cabin Rental");?>asdasd</a></li>
+							<li class="bordered"><a>* <?php print __("Cabin Rental");?></a></li>
 							<li class="bordered"><a>* <?php print __("Tours");?></a></li>
 							<li class="bordered"><a>* <?php print __("Construction of Eco-cabins");?></a></li>
 							<li class="bordered"><a>* <?php print __("Construction of tree little houses");?></a></li>
