@@ -32,9 +32,6 @@ function translation($text) {
 		case "Lodgings": return "Hospedaje"; break;
 		case "Ubication": return "ubicacion"; break;
 		case "Facilities": return "Instalaciones"; break;
-		//Credits:
-		case "All rights reserved": return "Todos los derechos reservados"; break;
-		case "Powered by": return "Desarrollado por"; break;
 		
 		case "Cabin Rental": "Renta de Cabañas"; break;
 		case "Tours": "Tours"; break;
@@ -46,6 +43,10 @@ function translation($text) {
 		case "For Our" : "Nuestras"; break;
 		case "Promotions" : "Promociones"; break;
 		case "Crafts and painting" : "Artesanías y pinturas"; break;
+		
+		//Credits:
+		case "All rights reserved": return "Todos los derechos reservados"; break;
+		case "Powered by": return "Desarrollado por"; break;
 		
 		//Applications:
 		case "Add": return "Agregar"; break;
