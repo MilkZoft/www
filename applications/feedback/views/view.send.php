@@ -9,7 +9,7 @@
 						
 			<p class="justify" id="info">
 				<strong><?php print __("Facilities");?> :</strong>
-				<?php print __("Km. 0.5 breha de la Yerbabuena al Volc&aacute;n de Colima, La Yerbabuena, Ejido San Antonio, Comala, Colima."); ?>
+				<?php print __("Km. 0.5 brecha de la Yerbabuena al Volc&aacute;n de Colima, La Yerbabuena, Ejido San Antonio, Comala, Colima."); ?>
 			</p>
 
 			<p class="justify" id="info">
