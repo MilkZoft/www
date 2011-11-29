@@ -24,7 +24,7 @@ class Pages_Model extends ZP_Model {
 	public function cpanel($action, $limit = NULL, $order = "Language DESC", $search = NULL, $field = NULL, $trash = FALSE) {
 		if($action === "edit" or $action === "save") {
 			$validation = $this->editOrSave();
-		
+			
 			if($validation) {
 				return $validation;
 			}

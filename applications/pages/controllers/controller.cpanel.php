@@ -10,7 +10,7 @@ class CPanel_Controller extends ZP_Controller {
 	
 	private $vars = array();
 	
-	public function __construct() {		
+	public function __construct() {	
 		$this->app("cpanel");
 		
 		$this->application = whichApplication();

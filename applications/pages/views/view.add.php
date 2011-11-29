@@ -72,7 +72,7 @@
 
 			print formSelect(array("name" => "situation", "class" => "select", "p" => TRUE, "field" => __("Situation")), $options);
 
-			print formSave($action);
+			print formSave($action, FALSE);
 
 			print formInput(array("name" => "ID", "type" => "hidden", "value" => $ID));
 		print formClose();
