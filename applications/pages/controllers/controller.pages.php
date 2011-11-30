@@ -25,6 +25,10 @@ class Pages_Controller extends ZP_Controller {
 		if(isLang() and segment(2)) {
 			if(segment(2) === "souvenirs") {
 				$this->getView(segment(2));
+			} elseif(segment(2) === "hospedaje") {
+				$this->getView(segment(2));
+			} elseif(segment(2) === "tours") {
+				$this->getView(segment(2));
 			} else {
 				$this->getBySlug(segment(2));
 			}
@@ -32,8 +36,9 @@ class Pages_Controller extends ZP_Controller {
 			$this->getBySlug(segment(1));		
 		} else {
 			$this->getByDefault();			
-		}		
+		}	
 	}
+	
 	private function getView($view = NULL) {
 		$view         = segment(2);
 		$vars["view"] = $this->view("$view", TRUE);
