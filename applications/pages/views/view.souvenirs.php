@@ -5,7 +5,7 @@
 			<div id="pages" class="grid_9">		
 				<h2>Souvenirs</h2>
 				
-				<h3>Artesanías y pinturas</h3>
+				<h3><?php print __("Crafts and painting");?></h3>
 							
 				<div class="item grid_3 push_10p">
 					<div>

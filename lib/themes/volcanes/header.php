@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title><?php print $this->getTitle();?></title>
+		<title><?php print utf8_decode($this->getTitle());?></title>
 		
 		
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/reset.css" />
@@ -10,8 +10,6 @@
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/960.css" />
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/960gs/code/css/demo.css" />
 		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/styles.css" />
-		
-		<link rel="stylesheet" href="<?php print $this->themePath; ?>/css/style.css" type="text/css">
 		
 		<?php #$this->CSS("polls", "polls"); ?>
 		<?php print $this->getCSS(); ?>
@@ -43,12 +41,12 @@
 			<!-- Menu -->
 			<div id="menu" class="container_12">
 				<ul class="container_12">
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Home"));?>">Inicio</a></li>
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Tours"));?>">Tours</a></li>
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Lodgings"));?>">Hospedaje</a></li>
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Ubication"));?>">Ubicación</a></li>
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Courses"));?>">Cursos</a></li>
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "feedback";?>">Contacto</a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Home"));?>"><?php print __("Home");?></a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Tours"));?>"><?php print __("Tours");?></a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Lodgings"));?>"><?php print __("Lodgings");?></a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Ubication"));?>"><?php print __("Ubication");?></a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Courses"));?>"><?php print __("Courses");?></a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "feedback";?>"><?php print __("Feedback");?></a></li>
 				</ul>
 				
 			</div>
