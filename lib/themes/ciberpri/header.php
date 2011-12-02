@@ -36,10 +36,10 @@
 							<div class="header-col">
 								<nav>
 									<ul>
-										<li class="active">
+										<li <?php (segment(2) == slug(__("Home") or segment(2) == FALSE) ? 'class="active"' : '' ;?>>
 											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Home"));?>"><?php print __("Start");?></a>
 										</li>
-										<li>
+										<li <?php (segment(2) == slug(__("Who are we?")) ? 'class="active"' : '' ;?>>
 											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Who are we?"));?>"><?php print __("Who are we?");?></a>
 										</li>
 										<li>
