@@ -7,16 +7,12 @@
 			<a name="top"></a>	
 			<?php print isset($alert) ? $alert : NULL; ?>
 						
-			<p class="justify" id="info">
-				<strong><?php print __("Facilities");?> :</strong>
-				<?php print __("Km. 0.5 brecha de la Yerbabuena al Volc&aacute;n de Colima, La Yerbabuena, Ejido San Antonio, Comala, Colima."); ?>
-			</p>
 
 			<p class="justify" id="info">
 				Tel: +52 (312) 323 4064 <br />
 				Cel: (312) 132  8113, (312)  109 3633 <br />
-				tourxvolcan@telmexmail.com <br />
-				<img src="" alt="Facebook" title="Facebook"/> <strong>Tour X Volcan</strong>
+				ciberpricolima@gmail.com <br />
+				<img src="" alt="Facebook" title="Facebook"/> <strong>Cibernautas PRI</strong>
 			</p>
 			
 			<div class="forms_feedback">
@@ -36,7 +32,7 @@
 				</p>
 				
 				<p>
-					<input name="send" type="submit" value="" tabindex="7" class="send" />
+					<input name="send" type="submit" value="<?php print __("Send");?>" tabindex="7" class="send" />
 				</p>  
 			</div>			
 			         
