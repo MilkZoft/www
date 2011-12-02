@@ -36,19 +36,19 @@
 							<div class="header-col">
 								<nav>
 									<ul>
-										<li <?php print (segment(2) == slug(__("Home")) or segment(2) == FALSE) ? 'class="active"' : '' ;?>>
+										<li <?php print (segment(2) === slug(__("Home")) or segment(2) === FALSE) ? 'class="active"' : '' ;?>>
 											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Home"));?>"><?php print __("Start");?></a>
 										</li>
-										<li <?php print (segment(2) == slug(__("Who are we?"))) ? 'class="active"' : '' ;?>>
+										<li <?php print (segment(2) === slug(__("Who are we?"))) ? 'class="active"' : '' ;?>>
 											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Who are we?"));?>"><?php print __("Who are we?");?></a>
 										</li>
-										<li>
+										<li <?php print (segment(2) === slug(__("Directory"))) ? 'class="active"' : '' ;?>>
 											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Directory"));?>"><?php print __("Directory");?></a>
 										</li>
-										<li>
+										<li <?php print (segment(1) === "afiliate") ? 'class="active"' : '' ;?>>
 											<a href="<?php print _webBase . _sh . _webLang . _sh . "afiliate";?>"><?php print __("Affiliates");?></a>
 										</li>
-										<li>
+										<li <?php print (segment(1) === "feedback") ? 'class="active"' : '' ;?>>
 											<a href="<?php print _webBase . _sh . _webLang . _sh . "feedback";?>"><?php print __("Feedback");?></a>
 										</li>
 									</ul>
