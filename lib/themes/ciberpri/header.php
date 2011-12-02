@@ -24,8 +24,8 @@
 							<div class="socials">
 								<a href="#"><img src="<?php print $this->themePath; ?>/images/email.gif" alt=""></a>
 								<a href="#"><img src="<?php print $this->themePath; ?>/images/rss.gif" alt=""></a>
-								<a href="#"><img src="<?php print $this->themePath; ?>/images/twitter.gif" alt=""></a>
-								<a href="#"><img src="<?php print $this->themePath; ?>/images/facebook.gif" alt=""></a>
+								<a href="http://twitter.com/#!/CiberPRIColima"><img src="<?php print $this->themePath; ?>/images/twitter.gif" alt=""></a>
+								<a href="http://www.facebook.com/profile.php?id=100003166167328"><img src="<?php print $this->themePath; ?>/images/facebook.gif" alt=""></a>
 							</div>
 						</section>
 						<div class="wrapper">
