@@ -36,11 +36,21 @@
 							<div class="header-col">
 								<nav>
 									<ul>
-										<li class="active"><a href="#"><?php print __("Start");?></a></li>
-										<li><a href="#"><?php print __("Who are we?");?></a></li>
-										<li><a href="#"><?php print __("Directory");?></a></li>
-										<li><a href="#"><?php print __("Affiliates");?></a></li>
-										<li><a href="#"><?php print __("Feedback");?></a></li>
+										<li class="active">
+											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Home"));?>"><?php print __("Start");?></a>
+										</li>
+										<li>
+											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Who are we?"));?>"><?php print __("Who are we?");?></a>
+										</li>
+										<li>
+											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Directory"));?>"><?php print __("Directory");?></a>
+										</li>
+										<li>
+											<a href="<?php print _webBase . _sh . _webLang . _sh . "afiliate";?>"><?php print __("Affiliates");?></a>
+										</li>
+										<li>
+											<a href="<?php print _webBase . _sh . _webLang . _sh . "feedback";?>"><?php print __("Feedback");?></a>
+										</li>
 									</ul>
 								</nav>
 							</div>
