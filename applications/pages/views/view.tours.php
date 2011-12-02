@@ -3,7 +3,13 @@
 			<div id="pages" class="grid_9">		
 				
 				<div id="tour-1">
+				
 					<div class="tour-top">
+						
+						<div class="reserve">
+							<a href="#"></a>
+						</div>
+						
 						<p>
 							<span class="bold">Duración total:</span> 12 horas. <br />
 							<span class="bold">Precio:</span> $840 <br />	
@@ -83,7 +89,13 @@
 				
 				
 				<div id="tour-2">
+				
 					<div class="tour-top2">
+						
+						<div class="reserve">
+							<a href="#"></a>
+						</div>
+						
 						<p>
 							<span class="bold">Duración total:</span> 10 horas. <br />
 							<span class="bold">Precio:</span> $1020 <br />	
@@ -195,7 +207,13 @@
 				
 				
 				<div id="tour-3">
+				
 					<div class="tour-top">
+						
+						<div class="reserve">
+							<a href="#"></a>
+						</div>
+						
 						<p>
 							<span class="bold">Duración total:</span> 10 horas. <br />
 							<span class="bold">Precio:</span> $780 <br />	

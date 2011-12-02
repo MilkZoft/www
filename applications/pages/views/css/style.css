@@ -116,9 +116,7 @@
 	height: 559px;
 }
 
-#tour-2 {
-	height: 650px;
-}
+#tour-2 { height: 650px; }
 
 
 table { margin-top: -10px; }
@@ -128,7 +126,32 @@ table td {
 	padding-left: 30px;
 }
 
-.tour-top p, .tour-bottom p {  font-size: 13px !important; }
+.tour-top p, .tour-bottom p {  font-size: 13px !important; z-index: -6 !important;}
+
+#tour-1 .tour-top p { margin-top: -40px !important; z-index: -1 !important; }
+#tour-2 .tour-top2 p { margin-top: -35px !important; z-index: -1 !important; }
+
 .tour-top { padding-top: 45px; }
 .tour-top2 { padding-top: 55px; }
 .tour-bottom { margin-top: -20px; }
+
+.reserve {
+	background-image: url(../images/reserve.png);
+	margin-left: 324px;
+	width: 75px;
+	height: 75px;
+	margin-top: -33px;
+	z-index: 2 !important;
+}
+
+div.reserve a {
+	display: block !important;
+	width: 100% !important;
+	height: 100% !important;
+	z-index: 2 !important;
+}
+
+#tour-3 .tour-top .reserve { 
+	margin-left: 342px; 
+	margin-top: -35px !important;
+}
