@@ -32,6 +32,7 @@ function translation($text) {
 		case "Lodgings": return "Hospedaje"; break;
 		case "Ubication": return "ubicacion"; break;
 		case "Facilities": return "Instalaciones"; break;
+		case "We offer": return "Ofrecemos"; break;
 		
 		case "Cabin Rental": return "Renta de Cabañas"; break;
 		case "Tours": return "Tours"; break;
