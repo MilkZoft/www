@@ -2,7 +2,7 @@
 				<div id="sidebar" class="grid_3">
 					<div id="sidebar-header">
 						<span id="sidebar-label" class="uppercased">
-							<?php __("Ofrecemos");?>Ofrecemos
+							<?php __("Ofrecemos");?>
 						</span>
 					</div>
 					
