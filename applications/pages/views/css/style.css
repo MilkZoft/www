@@ -130,6 +130,7 @@ table td {
 
 #tour-1 .tour-top p { margin-top: -40px !important; z-index: -1 !important; }
 #tour-2 .tour-top2 p { margin-top: -35px !important; z-index: -1 !important; }
+#tour-3 .tour-top p { margin-top: -10px !important; z-index: -1 !important; }
 
 .tour-top { padding-top: 45px; }
 .tour-top2 { padding-top: 55px; }
@@ -153,5 +154,5 @@ div.reserve a {
 
 #tour-3 .tour-top .reserve { 
 	margin-left: 342px; 
-	margin-top: -55px !important;
+	margin-top: -35px !important;
 }
