@@ -1,6 +1,11 @@
 				<!-- Sidebar -->
 				<div id="sidebar" class="grid_3">
-					<div id="sidebar-header"></div>
+					<div id="sidebar-header">
+						<span id="sidebar-label" class="uppercased">
+							<?php __("Ofrecemos");?>Ofrecemos
+						</span>
+					</div>
+					
 					<div id="sidebar-menu">
 						<ul>
 							<li class="bordered"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Lodgings"));?>">* <?php print __("Cabin Rental");?></a></li>
