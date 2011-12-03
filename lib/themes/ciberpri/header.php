@@ -40,7 +40,7 @@
 											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Who are we?"));?>"><?php print __("Who are we?");?></a>
 										</li>
 										<li <?php print (segment(2) === slug(__("Home")) or segment(1) === slug(__("Home"))) ? 'class="active"' : '' ;?>>
-											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Home"));?>"><?php print __("Programas");?></a>
+											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug("Home");?>"><?php print __("Programas");?></a>
 										</li>
 										<li <?php print (segment(2) === slug(__("Directory")) or segment(1) === slug(__("Directory"))) ? 'class="active"' : '' ;?>>
 											<a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Directory"));?>"><?php print __("Directory");?></a>
