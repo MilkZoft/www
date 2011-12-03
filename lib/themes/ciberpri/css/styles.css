@@ -5,6 +5,7 @@ mark, rp, rt, ruby, summary, time{ display: inline }
 /* Global properties ======================================================== */
 body { 
 	background:url(../images/body-bg.jpg) top center fixed; 
+	background:url(../images/logo_full_text_opacity.png);
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:0.8125em; 
 	line-height:1.3846em;
@@ -53,13 +54,16 @@ h2 {
 /* Global Structure ============================================================= */
 .main {
 	margin: 0 auto;
-	width: 980px; }
+	width: 980px;
+	background-color: #FFF;
+}
 
 	/* Header */
 	header{
 		height:135px;
 		background:url(../images/header-bg.png) left top repeat-x;
-	}		
+	}
+	
 	/* Footer */
 	footer{
 		height:54px;
