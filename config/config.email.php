@@ -14,6 +14,6 @@ define("_gUser", "caarloshugo@gmail.com");
 define("_gPwd", "Agosto17218803");
 define("_gSSL", "ssl://smtp.gmail.com");
 define("_gPort", 465);
-define("_wEmailSend", "caarloshugo@gmail.com");
+define("_wEmailSend", "tourxvolcan@telmexmail.com");
 define("_wEmailLibrary", "PHPMailer");
 define("_maxAttempts", 3);
