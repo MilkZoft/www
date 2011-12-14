@@ -26,7 +26,7 @@ class Feedback_Controller extends ZP_Controller {
 		$this->js("tiny-mce", NULL, "basic");
 		$this->title("Feedback");
 		
-		if(POST("send")) {						
+		if(POST("send")) {
 			$this->vars["alert"] = $this->Feedback_Model->send();
 			$this->vars["view"]  = $this->view("send", TRUE);
 			

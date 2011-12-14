@@ -23,7 +23,7 @@
 					<span class="uppercased">Créditos</span> <br />
 					Fotografía: Fernando Chávez, Sandra Ezquivel <br />
 					Diseño Web: Sandra Ezquivel (sandra.ezquivel@gmail.com) <br />
-					Desarrollo WEB: <a href="http://www.milkzoft.com">MilkZoft</a>
+					Desarrollo WEB: <a href="http://www.milkzoft.com" title="Desarrollo de software" target="_blank">MilkZoft</a>
 				</p>
 			</div>
 			

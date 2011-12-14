@@ -36,7 +36,7 @@
 				</p>
 				
 				<p>
-					<input name="send" type="submit" value="" tabindex="7" class="send" />
+					<input name="send" type="submit" value="send" tabindex="7" class="send" />
 				</p>  
 			</div>			
 			         
