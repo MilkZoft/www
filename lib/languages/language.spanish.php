@@ -357,7 +357,7 @@ function translation($text) {
 		case "Register": return "Registro"; break;
 		case "The profile that you are looking for doesn't exists": return "El perfil que estás buscando no existe"; break;
 		case "Your profile has been edited correctly": return "Tu perfil se ha modificado correctamente"; break;
-		
+		case "Your message has been sent successfully, we will contact you as soon as possible, thank you very much!" : return "Su mensaje ha sido enviado correctamente, nos pondremos en contacto lo antes posible, muchas gracias!"; break;
 	}
 	
 	return $text;
