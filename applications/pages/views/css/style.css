@@ -156,3 +156,40 @@ div.reserve a {
 	margin-left: 342px; 
 	margin-top: -35px !important;
 }
+
+/*Gallery*/
+.wrap {
+	#border: 1px solid red;
+	width: 380px;
+	height: 360px;
+	float: left;
+}
+
+#bigpic1, #bigpic2, #bigpic3 {
+	margin-top: 50px;
+	margin-left: 25px;
+}
+
+#thumbs1, #thumbs2, #thumbs3 {
+	#border: 1px solid blue;
+	height: 100px;
+	width: 350px;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+#thumbs1 ul, #thumbs2 ul, #thumbs3 ul {
+	width: 400px;
+	margin: 0 !important;
+}
+
+#thumbs1 ul li, #thumbs2 ul li, #thumbs3 ul li{
+	display: inline !important;
+	margin: 0 !important;
+	margin-left: 10px !important;
+}
+
+#thumbs1 ul li a img, #thumbs2 ul li a img, #thumbs3 ul li a img{
+	margin-top: -60px;
+	
+}

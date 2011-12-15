@@ -21,9 +21,12 @@ class Pages_Controller extends ZP_Controller {
 	
 	public function index() {
 		$this->CSS("style", $this->application);
-		
+		$this->js("gallery-effects", $this->application);
+			
 		if(isLang() and segment(2)) {
 			if(segment(2) === "souvenirs") {
+				$this->getView(segment(2));
+			} elseif(segment(2) === "hospedaje") {
 				$this->getView(segment(2));
 			} else {
 				$this->getBySlug(segment(2));
