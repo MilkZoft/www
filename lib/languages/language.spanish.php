@@ -30,6 +30,7 @@ function translation($text) {
 		case "Alimentation": return "Alimentación"; break;
 		case "Courses": return "Cursos"; break;
 		case "Lodgings": return "Hospedaje"; break;
+		case "lodge": return "Hospedaje"; break;
 		case "Ubication": return "ubicacion"; break;
 		case "Facilities": return "Instalaciones"; break;
 		case "We offer": return "Ofrecemos"; break;
