@@ -181,6 +181,7 @@
 #credits p {
 	border: none;
 	color: #757474;
+	margin-right: 20px;
 }
 
 #footer div p {
@@ -220,6 +221,16 @@
 
 .uppercased {
 	text-transform: uppercase;
+}
+
+#social {
+	float: left;
+	margin-top: 5px;
+}
+
+#social a {
+	text-decoration: none;
+	font-size: 12px;
 }
 
 

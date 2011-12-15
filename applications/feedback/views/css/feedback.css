@@ -28,6 +28,7 @@
 	height: 54px;
 	width: 99px;
 	border: none;
+	text-indent: -9999px;
 }
 
 .feedback fieldset {

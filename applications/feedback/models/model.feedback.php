@@ -131,10 +131,7 @@ class Feedback_Model extends ZP_Model {
 		$this->Email->message = 	'
 									<p>'. __("Message") .'</p>									
 									<p><strong>'. __("Name") .':</strong> <br /> '    . POST("name")    . '</p>									
-									<p><strong>'. __("Email") .':</strong> <br /> '   . POST("email")   . '</p>									
-									<p><strong>'. __("Company") .':</strong> <br /> ' . POST("company") . '</p>									
-									<p><strong>'. decode( __("Phone")) .':</strong> <br /> '   . POST("phone")   . '</p>									
-									<p><strong>'. __("Subject") .':</strong> <br /> ' . POST("subject") . '</p>									
+									<p><strong>'. __("Email") .':</strong> <br /> '   . POST("email")   . '</p>																	
 									<p><strong>'. __("Message") .':</strong> <br /> ' . POST("message", "decode", FALSE) . '</p>									
 									';
 		$this->Email->send();

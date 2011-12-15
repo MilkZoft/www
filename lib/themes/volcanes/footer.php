@@ -19,11 +19,17 @@
 			
 			<!-- Credits -->
 			<div id="credits" class="container_12">
+				<div id="social">
+					<a href="http://www.facebook.com/profile.php?id=100002888140010" target="_blank">
+						<img src="<?php print _webURL. _sh ."www"._sh."lib". _sh ."themes". _sh ."volcanes". _sh."images". _sh ."facebook.png"; ?>" />
+					</a>
+				</div>
+				
 				<p class="center">
 					<span class="uppercased">Créditos</span> <br />
 					Fotografía: Fernando Chávez, Sandra Ezquivel <br />
 					Diseño Web: Sandra Ezquivel (sandra.ezquivel@gmail.com) <br />
-					Desarrollo WEB: <a href="http://www.milkzoft.com">MilkZoft</a>
+					Desarrollo WEB: <a href="http://www.milkzoft.com" title="Desarrollo de software" target="_blank">MilkZoft</a>
 				</p>
 			</div>
 			
