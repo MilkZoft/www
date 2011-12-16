@@ -27,6 +27,13 @@
 				<div class="language en"><a href="<?print _webURL._sh."en";?>"></a></div>
 				<div class="language es"><a href="<?print _webURL._sh."es";?>"></a></div>
 				
+				<?php
+				if(segment(2) === "hospedaje" OR segment(2) == "lodge") {
+					print '<div id="logo-inside"></div>'; 
+				}
+				
+				?>
+				
 				<div id="slider" class="nivoSlider">
 					<img src="<?php print $this->themePath; ?>/images/slider/bg.png" />
 					<img src="<?php print $this->themePath; ?>/images/slider/bg-2.png" />

@@ -1,5 +1,13 @@
 $(document).ready(function(){
-
+	
+	$('#thumbs1 ul li a, #thumbs2 ul li a, #thumbs3 ul li a').click(
+		function() {
+			return false;
+		}
+	);
+	
+	
+	
 	$('#thumbs1 ul li a').hover(
 		function() {
 			var currentBigImage = $('#bigpic1 img').attr('src');

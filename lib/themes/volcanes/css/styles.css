@@ -100,6 +100,16 @@
 .es { margin: 10px 845px; }
 
 
+#logo-inside {
+	margin: 190px 100px;
+	width: 200px; 
+	height: 107px;
+	position: absolute;
+	z-index: 6; 
+	background-image: url(../images/logo-inside.png);
+	background-repeat: no-repeat;
+}
+
 /* ---------------- Siderbar ---------------- */
 
 #sidebar-header {
