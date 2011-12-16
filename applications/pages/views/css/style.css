@@ -91,8 +91,8 @@
 #hospedaje-1 { background-image: url(../images/hospedaje-1.png); }
 #hospedaje-2 { background-image: url(../images/hospedaje-2.png); }
 #hospedaje-3 { background-image: url(../images/hospedaje-3.png); }
-#hospedaje-1 p, #hospedaje-2 p, #hospedaje-3 p  { margin-left: 400px; }
-
+#hospedaje-1 p, #hospedaje-2 p { margin-left: 400px; }
+#hospedaje-3 p { margin-left: 410px; }
 #hospedaje-1, #hospedaje-2, #hospedaje-3 {
 	background-repeat: no-repeat;
 	height: 393px;
@@ -106,9 +106,6 @@
 	font-size: 13px;
 }
 
-#hospedaje3p {
-	margin-left:10px;
-}
 /* --- view.tours ---*/
 #tour-1 { background-image: url(../images/t1.png); }
 #tour-2 { background-image: url(../images/t2.png); }
