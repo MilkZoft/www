@@ -1,1 +1,0 @@
-$('.banner-lightbox').prettyPhoto();
