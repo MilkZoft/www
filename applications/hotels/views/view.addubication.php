@@ -17,5 +17,6 @@
 </legend>
 
 <div class="map_google"></div>
+
 <input id="lat" name="lat" type="hidden" value="<?php print $lat;?>"/>
 <input id="lng" name="lng" type="hidden" value="<?php print $lng;?>"/>

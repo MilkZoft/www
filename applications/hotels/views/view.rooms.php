@@ -12,36 +12,41 @@
 <?php $this->view("options", array("slug" => $slug), $application);?>
 
 <div id="contentSlide">
-	<?php foreach($rooms as $room) { ?>
-		<div class="room">
-			<p>
-				<img src="" title="Bed" alt="Bed" />
-				<h2>
-					<?php print $room["Name"];?>
-				</h2>
-			</p>
-			
-			<p>
-				<strong><?php print __("Bed type");?></strong>: 
-				<?php print $room["Bed_Type"];?>
-			</p>
+	<?php if($rooms) { ?>
+		<?php foreach($rooms as $room) { ?>
+			<div class="room">
+				<p>
+					<img src="<?php print _webURL . _sh . $room["Image"];?>" title="Bed" alt="Bed" />
+					
+					<h2>
+						<?php print $room["Name"];?>
+					</h2>
+				</p>
 				
-			<p>
-				<strong><?php print __("Max occupation");?></strong>: 
-				<?php print $room["Max_Occupation"];?>
-			</p>
-			
-			<p>
-				<strong><?php print __("Number rooms");?></strong>: 
-				<?php print $room["Number_Rooms"];?>
-			</p>
-			
-			<p>
-				<strong><?php print __("Description");?></strong><br />
-				<?php print $room["Description"];?>
-			</p>
-		</div>
-	<?php  } ?>
+				<p>
+					<strong><?php print __("Bed type");?></strong>: 
+					<?php print $room["Bed_Type"];?>
+				</p>
+					
+				<p>
+					<strong><?php print __("Max occupation");?></strong>: 
+					<?php print $room["Max_Occupation"];?>
+				</p>
+				
+				<p>
+					<strong><?php print __("Number rooms");?></strong>: 
+					<?php print $room["Number_Rooms"];?>
+				</p>
+				
+				<p>
+					<strong><?php print __("Description");?></strong><br />
+					<?php print $room["Description"];?>
+				</p>
+			</div>
+		<?php  } ?>
+	<?php } else { ?>
+		<?php print __("This hotel has added rooms");?>
+	<?php } ?>
 </div>
 
 <script type="text/javascript">

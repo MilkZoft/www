@@ -105,7 +105,7 @@ class Hotels_Model extends ZP_Model {
 	private function setData() {
 		$this->ID_Parent   = POST("hotels");
 		$this->name        = POST("name");
-		$this->description = POST("description");
+		$this->description = POST("description","decode", FALSE);
 		$this->slug        = slug(POST("name", "clean"));
 		$this->category    = POST("category");
 		$this->email       = POST("email");
@@ -199,6 +199,7 @@ class Hotels_Model extends ZP_Model {
 			"Name"   	   		 => $this->name,
 			"ID_Parent"   	     => $this->ID_Parent,
 			"Slug"		   		 => $this->slug,
+			"Description"		 => $this->description,
 			"Category"	   		 => $this->category,
 			"Emails_Reservation" => $this->email,
 			"Address"		     => $this->address,
@@ -723,7 +724,7 @@ class Hotels_Model extends ZP_Model {
 	
 	public function slug($slug = NULL) {
 		$this->Db->table($this->table);
-		$query  = "SELECT muu_hotels.*, muu_hotels_information.* FROM muu_hotels ";
+		$query  = "SELECT muu_hotels.*, muu_hotels_information.*, muu_hotels_policy.*, muu_hotels_contacts.* FROM muu_hotels ";
 		$query .= "LEFT JOIN muu_hotels_information ON muu_hotels.ID_Hotel = muu_hotels_information.ID_Hotel ";
 		$query .= "LEFT JOIN muu_hotels_contacts ON muu_hotels.ID_Hotel = muu_hotels_contacts.ID_Hotel ";
 		$query .= "LEFT JOIN muu_hotels_policy ON muu_hotels.ID_Hotel = muu_hotels_policy.ID_Hotel ";
@@ -760,6 +761,32 @@ class Hotels_Model extends ZP_Model {
 		$query .= "(SELECT ID_Room FROM muu_re_hotels_rooms WHERE ID_Hotel = $ID)";
 		
 		return $this->Db->query($query);
+	}
+	
+	public function rates($slug = NUll) {
+		if(!is_numeric($slug)) {
+			$ID = $this->getID($slug);
+		} else {
+			$ID = $slug;
+		}
+		
+		$this->Db->table("re_hotels_rates", "ID_Rate");
+		
+		$query  = "SELECT * FROM muu_hotels_rates WHERE ID_Rate IN ";
+		$query .= "(SELECT ID_Rate FROM muu_re_hotels_rates WHERE ID_Hotel = $ID)";
+		
+		return $this->Db->query($query);
+	}
+	
+	public function amenities($slug = NUll) {
+		if(!is_numeric($slug)) {
+			$ID = $this->getID($slug);
+		} else {
+			$ID = $slug;
+		}
+		
+		$this->Db->table("hotels_amenities", "ID_Amenity, Name, Slug, Image, Language");
+		return $this->Db->findBySQL("ID_Amenity IN (SELECT ID_Amenity FROM muu_re_hotels_amenities WHERE ID_Hotel = '$ID')");
 	}
 	
 	public function getID($slug = NULL) {

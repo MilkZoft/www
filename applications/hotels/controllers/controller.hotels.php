@@ -29,13 +29,26 @@ class Hotels_Controller extends ZP_Controller {
 	
 	public function index() {
 		if(segment(2)) {
-			$this->hotel(segment(2));
+			$this->slug(segment(2));
 		} else {
-			die("Home");
+			$this->hotels();
 		}
 	}
 	
-	public function hotel($slug = NULL) {
+	private function hotels() {
+		$this->vars["hotels"] = $this->Hotels_Model->getBySituation();
+		
+		if(!$this->vars["hotels"]) {
+			redirect(_webBase);
+		}
+		
+		$this->vars["view"] = $this->view("hotels", TRUE, $this->application);	
+		$this->template("content", $this->vars);
+		
+		
+	}
+	
+	public function slug($slug = NULL) {
 		if(is_numeric($slug)) {
 			$hotel = $this->Hotels_Model->ID($slug);
 		} else {
@@ -50,7 +63,7 @@ class Hotels_Controller extends ZP_Controller {
 			
 			$this->template("content", $this->vars);
 			
-			$this->render();
+			
 		} else {
 			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh);
 		}
@@ -62,7 +75,7 @@ class Hotels_Controller extends ZP_Controller {
 		} else {
 			$hotel = $this->Hotels_Model->slug($slug);
 		}
-		
+	
 		if($hotel) {
 			$this->vars["hotel"]       = $hotel;
 			$this->vars["slug"]        = $slug;
@@ -71,7 +84,28 @@ class Hotels_Controller extends ZP_Controller {
 			
 			$this->template("content", $this->vars);
 			
-			$this->render();
+			
+		} else {
+			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh);
+		}
+	}
+	
+	public function politics($slug = NULL) {
+		if(is_numeric($slug)) {
+			$hotel = $this->Hotels_Model->ID($slug);
+		} else {
+			$hotel = $this->Hotels_Model->slug($slug);
+		}
+		
+		if($hotel) {
+			$this->vars["hotel"]       = $hotel;
+			$this->vars["slug"]        = $slug;
+			$this->vars["application"] = $this->application;
+			$this->vars["view"]        = $this->view("politics", TRUE, $this->application);
+			
+			$this->template("content", $this->vars);
+			
+			
 		} else {
 			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh);
 		}
@@ -97,7 +131,7 @@ class Hotels_Controller extends ZP_Controller {
 			
 			$this->template("content", $this->vars);
 			
-			$this->render();
+			
 		} else {
 			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh);
 		}
@@ -112,7 +146,7 @@ class Hotels_Controller extends ZP_Controller {
 		
 		$rooms = $this->Hotels_Model->rooms($slug);
 		
-		if($hotel and $rooms) {
+		if($hotel) {
 			$this->vars["hotel"]       = $hotel;
 			$this->vars["rooms"]       = $rooms;
 			$this->vars["slug"]        = $slug;
@@ -121,7 +155,121 @@ class Hotels_Controller extends ZP_Controller {
 			
 			$this->template("content", $this->vars);
 			
-			$this->render();
+			
+		} else {
+			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh);
+		}
+	}
+	
+	public function rates($slug = NULL) {
+		if(is_numeric($slug)) {
+			$hotel = $this->Hotels_Model->ID($slug);
+		} else {
+			$hotel = $this->Hotels_Model->slug($slug);
+		}
+		
+		$rates = $this->Hotels_Model->rates($slug);
+		
+		if($hotel) {
+			$this->vars["hotel"]       = $hotel;
+			$this->vars["rates"]       = $rates;
+			$this->vars["slug"]        = $slug;
+			$this->vars["application"] = $this->application;
+			$this->vars["view"]        = $this->view("rates", TRUE, $this->application);
+			
+			$this->template("content", $this->vars);
+			
+			
+		} else {
+			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh);
+		}
+	}
+	
+	public function activites($slug = NULL) {
+		if(is_numeric($slug)) {
+			$hotel = $this->Hotels_Model->ID($slug);
+		} else {
+			$hotel = $this->Hotels_Model->slug($slug);
+		}
+	
+		if($hotel) {
+			$this->vars["hotel"]       = $hotel;
+			$this->vars["slug"]        = $slug;
+			$this->vars["application"] = $this->application;
+			$this->vars["view"]        = $this->view("activities", TRUE, $this->application);
+			
+			$this->template("content", $this->vars);
+			
+			
+		} else {
+			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh);
+		}
+	}
+	
+	public function restaurants($slug = NULL) {
+		if(is_numeric($slug)) {
+			$hotel = $this->Hotels_Model->ID($slug);
+		} else {
+			$hotel = $this->Hotels_Model->slug($slug);
+		}
+		
+		if($hotel) {
+			$this->vars["hotel"]       = $hotel;
+			$this->vars["slug"]        = $slug;
+			$this->vars["application"] = $this->application;
+			$this->vars["view"]        = $this->view("restaurants", TRUE, $this->application);
+			
+			$this->template("content", $this->vars);
+			
+			
+		} else {
+			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh);
+		}
+	}
+	
+	public function amenities($slug = NULL) {
+		if(is_numeric($slug)) {
+			$hotel = $this->Hotels_Model->ID($slug);
+		} else {
+			$hotel = $this->Hotels_Model->slug($slug);
+		}
+		
+		$amenities = $this->Hotels_Model->amenities($slug);
+		
+		if($hotel) {
+			$this->vars["hotel"]       = $hotel;
+			$this->vars["amenities"]   = $amenities;
+			$this->vars["slug"]        = $slug;
+			$this->vars["application"] = $this->application;
+			$this->vars["view"]        = $this->view("amenities", TRUE, $this->application);
+			
+			$this->template("content", $this->vars);
+			
+			
+		} else {
+			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh);
+		}
+	}
+	
+	public function gallery($slug = NULL) {
+		if(is_numeric($slug)) {
+			$hotel = $this->Hotels_Model->ID($slug);
+		} else {
+			$hotel = $this->Hotels_Model->slug($slug);
+		}
+		
+		$amenities = $this->Hotels_Model->amenities($slug);
+		
+		if($hotel) {
+			$this->vars["hotel"]       = $hotel;
+			$this->vars["amenities"]   = $amenities;
+			$this->vars["slug"]        = $slug;
+			$this->vars["application"] = $this->application;
+			$this->vars["view"]        = $this->view("amenities", TRUE, $this->application);
+			
+			$this->template("content", $this->vars);
+			
+			
 		} else {
 			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh);
 		}

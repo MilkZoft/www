@@ -33,7 +33,7 @@ class CPanel_Controller extends ZP_Controller {
 		}
 	}
 	
-	public function index() {		
+	public function index() {
 		$this->vars["hotels"] = $this->Hotels_Model->getBySituation();
 		
 		if(!$this->vars["hotels"]) {
@@ -50,6 +50,8 @@ class CPanel_Controller extends ZP_Controller {
 		$this->vars["languages"]   = getLanguages();
 		
 		$this->template("content", $this->vars);
+		
+		
 	}
 	
 	public function edit($ID = FALSE, $flag = "") {
@@ -99,12 +101,16 @@ class CPanel_Controller extends ZP_Controller {
 			$this->vars["languages"]   = getLanguages();
 			
 			$this->template("content", $this->vars);
+			
+		
+			
 		} else {
 			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh . _cpanel . _sh  . _add);
 		}
 	}
 	
 	public function add() {		
+		
 		if(POST("save")) {	
 			$this->vars["alert"] = $this->Hotels_Model->cpanel("save");
 		} elseif(POST("cancel")) {
@@ -135,6 +141,8 @@ class CPanel_Controller extends ZP_Controller {
 		$this->vars["languages"]   = getLanguages();
 		
 		$this->template("content", $this->vars);
+		
+		
 	}
 	
 	public function rooms($alert = FALSE) {
@@ -179,9 +187,11 @@ class CPanel_Controller extends ZP_Controller {
 		$this->vars["languages"]   = getLanguages();
 		
 		$this->template("content", $this->vars);
+		
+		
 	}
 	
-	public function editRoom($ID = FALSE) {
+	public function editroom($ID = FALSE) {
 		if($ID) {
 			if(POST("save")) {	
 				$this->vars["alert"] = $this->Hotels_Model->editRoom($ID);
@@ -213,6 +223,8 @@ class CPanel_Controller extends ZP_Controller {
 			$this->vars["languages"]   = getLanguages();
 			
 			$this->template("content", $this->vars);
+			
+			
 		} else {
 			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh . _cpanel . _sh  . _add);
 		}
@@ -228,6 +240,7 @@ class CPanel_Controller extends ZP_Controller {
 	}
 	
 	public function rates($alert = FALSE) {
+		
 		if($alert) {
 			$this->vars["alert"] = $alert;
 		}
@@ -266,9 +279,11 @@ class CPanel_Controller extends ZP_Controller {
 		$this->vars["languages"]   = getLanguages();
 		
 		$this->template("content", $this->vars);
+		
+		
 	}
 	
-	public function editRate($ID = FALSE) {
+	public function editrate($ID = FALSE) {
 		if($ID) {
 			if(POST("save")) {	
 				$this->vars["alert"] = $this->Hotels_Model->editRate($ID);
@@ -303,6 +318,8 @@ class CPanel_Controller extends ZP_Controller {
 			$this->vars["languages"]   = getLanguages();
 			
 			$this->template("content", $this->vars);
+			
+			
 		} else {
 			redirect(_webBase . _sh . _webLang . _sh . $this->application . _sh . _cpanel . _sh  . _add);
 		}
@@ -364,7 +381,10 @@ class CPanel_Controller extends ZP_Controller {
 		$this->vars["languages"]   = getLanguages();
 		
 		$this->template("content", $this->vars);
+		
+		
 	}
+	
 	
 	public function delete($ID = 0) {
 		if($this->Hotels_Model->delete($ID)) {

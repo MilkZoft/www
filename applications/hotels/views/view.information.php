@@ -12,49 +12,47 @@
 <?php $this->view("options", array("slug" => $slug), $application);?>
 
 <div id="contentSlide">
-	<p>
-		<?php ____($hotel);?>
-	</p>
 	
-	<div class="information">		
+	<div class="information">	
+	
+		<p>
+			<strong><?php print __("Description");?></strong>: 
+			<?php print $hotel["Description"];?>
+		</p>	
+		
 		<p>
 			<strong><?php print __("Room numbers");?></strong>: 
 			<?php print $hotel["Room_Number"];?>
 		</p>
 			
 		<p>
-			<strong><?php print __("Year_Construction");?></strong>: 
+			<strong><?php print __("Year Construction");?></strong>: 
 			<?php print $hotel["Year_Construction"];?>
 		</p>
 		
 		<p>
-			<strong><?php print __("Year_Remodelation");?></strong>: 
+			<strong><?php print __("Year Remodelation");?></strong>: 
 			<?php print $hotel["Year_Remodelation"];?>
 		</p>
 		
 		<p>
-			<strong><?php print __("In_Time");?></strong><br />
+			<strong><?php print __("In Time");?></strong><br />
 			<?php print $hotel["In_Time"];?>
 		</p>
 		
 		<p>
-			<strong><?php print __("Out_Time");?></strong><br />
+			<strong><?php print __("Out Time");?></strong><br />
 			<?php print $hotel["Out_Time"];?>
 		</p>
 		
 		<p>
-			<strong><?php print __("Max_Year_Children");?></strong><br />
+			<strong><?php print __("Max Year Children");?></strong><br />
 			<?php print $hotel["Max_Year_Children"];?>
 		</p>
 		
 		<p>
-			<strong><?php print __("Min_Days_Reservation");?></strong><br />
+			<strong><?php print __("Min Days Reservation");?></strong><br />
 			<?php print $hotel["Min_Days_Reservation"];?>
-		</p>
-		
-		<p>
-			<strong><?php print __("In_Time");?></strong><br />
-			<?php print $hotel["In_Time"];?>
 		</p>
 	</div>
 </div>
