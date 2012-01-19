@@ -51,7 +51,7 @@
 					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh;?>"><?php print __("Resort");?></a></li>
 					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Tours"));?>"><?php print __("Tours");?></a></li>
 					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Lodge"));?>"><?php print __("Lodge");?></a></li>
-					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Ubication"));?>"><?php print __("Ubication");?></a></li>
+					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Location"));?>"><?php print __("Location");?></a></li>
 					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Courses"));?>"><?php print __("Courses");?></a></li>
 					<li class="grid_2"><a href="<?php print _webBase . _sh . _webLang . _sh . "feedback";?>"><?php print __("Feedback");?></a></li>
 				</ul>
