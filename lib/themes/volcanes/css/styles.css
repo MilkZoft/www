@@ -24,9 +24,22 @@
 	height: 30px;
 }
 
-#menu ul li:hover {
-	background-image: url(../images/bg-menu.png);
+.resort, .tours, .lodge, .location, .courses, .contact {	
+	background-position: center;
+	background-repeat: no-repeat;
 }
+
+#menu ul li a.resort   { background-image: url(../images/resort.png);   }
+#menu ul li a.tours    { background-image: url(../images/tours.png);    }
+#menu ul li a.lodge    { background-image: url(../images/lodge.png);    }
+#menu ul li a.location { background-image: url(../images/location.png); }
+#menu ul li a.courses  { background-image: url(../images/courses.png);  }
+#menu ul li a.contact  { background-image: url(../images/contact.png);  }
+
+
+
+#menu ul li:hover { background-image: url(../images/bg-menu.png); }
+
 
 #menu ul li a {
 	color: #696969;
