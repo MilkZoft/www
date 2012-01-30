@@ -53,7 +53,7 @@
 					<li class="grid_2"><a class="lodge"  href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Lodge"));?>"><?php print __("Lodge");?></a></li>
 					<li class="grid_2"><a class="location"       href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Location"));?>"><?php print __("Location");?></a></li>
 					<li class="grid_2"><a class="courses" href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Courses"));?>"><?php print __("Courses");?></a></li>
-					<li class="grid_2"><a class="contact" href="<?php print _webBase . _sh . _webLang . _sh . "feedback";?>"><?php print __("Contact Us");?></a></li>
+					<li class="grid_2"><a class="contact" href="<?php print _webBase . _sh . _webLang . _sh . "feedback";?>"><?php print __("Contact us");?></a></li>
 				</ul>
 				
 			</div>

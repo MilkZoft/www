@@ -24,7 +24,11 @@ class Pages_Controller extends ZP_Controller {
 		$this->js("gallery-effects", $this->application);
 			
 		if(isLang() and segment(2)) {
-			$this->getBySlug(segment(2));
+			if(segment(2) == "souvenirs") {
+				$this->getView("souvenirs");
+			} else  {
+				$this->getBySlug(segment(2));
+			}
 		} elseif(!isLang() and segment(1)) {
 			$this->getBySlug(segment(1));		
 		} else {
