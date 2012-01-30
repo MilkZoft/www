@@ -57,6 +57,7 @@ function translation($text) {
 		case "Categories": return "Categorías"; break;
 		case "Configuration": return "Configuración"; break;
 		case "Feedback": return "Contacto"; break;
+		case "Feed Supply": return "Alimentación"; break;
 		case "Pages": return "Páginas"; break;
 		case "Users": return "Usuarios"; break;
 		case "Gallery": return "Galería"; break;
