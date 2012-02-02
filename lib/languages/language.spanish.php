@@ -39,7 +39,7 @@ function translation($text) {
 		case "Tours": return "Tours"; break;
 		case "Construction of Eco-cabins": return "Construcción de Cabañas Ecológicas"; break;
 		case "Design and building of ecocabins": return "Construcción de Cabañas Ecológicas"; break;
-		case "Construction of tree little houses": return  "Construcción de Casitas de juego"; break;
+		case "Construction of play houses": return  "Construcción de Casitas de juego"; break;
 		case "Construction of Green roofs": return "Cubiertas verdes"; break;
 		case "Organic products and handcraft": return "Productos orgánicos y artesanales"; break;
 		case "Ask": return "Pregunta por"; break;
