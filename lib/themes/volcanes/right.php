@@ -7,7 +7,7 @@
 					</div>
 					
 					<div id="sidebar-menu">
-						<ul>Green Roof Building and Design
+						<ul>
 							<li class="bordered"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages"; ?>">* <?php print __("Cabin Rental");?></a></li>
 							<li class="bordered"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Tours"));?>">* <?php print __("Tours");?></a></li>
 							<li class="bordered"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Design and building of ecocabins"));?>">* <?php print __("Design and building of ecocabins");?></a></li>
