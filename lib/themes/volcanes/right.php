@@ -13,7 +13,7 @@
 							<li class="bordered"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Design and building of ecocabins"));?>">* <?php print __("Design and building of ecocabins");?></a></li>
 							<li class="bordered"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Construction of play houses"));?>">* <?php print __("Construction of play houses");?></a></li>
 							<li class="bordered"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Green Roof Building and Design"));?>">* <?php print __("Green Roof Building and Design");?></a></li>
-							<li><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Alimentation"));?>">* <?php print __("Organic products and handcraft");?></a></li>
+							<li><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Food Supply"));?>">* <?php print __("Organic products and handcraft");?></a></li>
 						</ul>
 					</div>
 					<!-- Sub Sidebar -->
