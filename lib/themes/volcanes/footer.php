@@ -13,7 +13,7 @@
 				</div>
 				
 				<div class="footer-box f4 grid_3">	
-					<p class="padding_5 center"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Feed Supply"));?>"><?php print __("Feed Supply");?></a></p>
+					<p class="padding_5 center"><a href="<?php print _webBase . _sh . _webLang . _sh . "pages" . _sh . slug(__("Food Supply"));?>"><?php print __("Food Supply");?></a></p>
 				</div>	
 			</div>
 			
