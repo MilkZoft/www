@@ -91,6 +91,9 @@
 #hospedaje-1 { background-image: url(../images/hospedaje-1.png); }
 #hospedaje-2 { background-image: url(../images/hospedaje-2.png); }
 #hospedaje-3 { background-image: url(../images/hospedaje-3.png); }
+#hospedaje-4 { background-image: url(../images/hospedaje-3.png); }
+
+
 #hospedaje-1 p, #hospedaje-2 p { margin-left: 400px; }
 #hospedaje-3 p { margin-left: 410px; }
 #hospedaje-1, #hospedaje-2, #hospedaje-3 {
@@ -98,7 +101,7 @@
 	height: 393px;
 }
 
-#hospedaje-1 ul, #hospedaje-2 ul, #hospedaje-3 ul {
+#hospedaje-1 ul, #hospedaje-2 ul, #hospedaje-3 ul, #hospedaje-4 ul {
 	margin-left: 380px;
 	padding-top: 60px;
 	color: #5E4D31;
@@ -165,12 +168,12 @@ div.reserve a {
 	float: left;
 }
 
-#bigpic1, #bigpic2, #bigpic3 {
+#bigpic1, #bigpic2, #bigpic3, #bigpic4  {
 	margin-top: 50px;
 	margin-left: 25px;
 }
 
-#thumbs1, #thumbs2, #thumbs3 {
+#thumbs1, #thumbs2, #thumbs3, #thumbs4 {
 	#border: 1px solid blue;
 	height: 100px;
 	width: 350px;
