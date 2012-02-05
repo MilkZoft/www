@@ -39,8 +39,8 @@ function translation($text) {
 		case "Tours": return "Tours"; break;
 		case "Construction of Eco-cabins": return "Construcción de Cabañas Ecológicas"; break;
 		case "Design and building of ecocabins": return "Construcción de Cabañas Ecológicas"; break;
-		case "Construction of tree little houses": return  "Construcción de Casitas de juego"; break;
-		case "Construction of Green roofs": return "Cubiertas verdes"; break;
+		case "Construction of play houses": return  "Construcción de Casitas de juego"; break;
+		case "Green Roof Building and Design": return "Cubiertas verdes"; break;
 		case "Organic products and handcraft": return "Productos orgánicos y artesanales"; break;
 		case "Ask": return "Pregunta por"; break;
 		case "For Our" : return "Nuestras"; break;
@@ -58,7 +58,7 @@ function translation($text) {
 		case "Categories": return "Categorías"; break;
 		case "Configuration": return "Configuración"; break;
 		case "Feedback": return "Contacto"; break;
-		case "Feed Supply": return "Alimentación"; break;
+		case "Food Supply": return "Alimentación"; break;
 		case "Pages": return "Páginas"; break;
 		case "Users": return "Usuarios"; break;
 		case "Gallery": return "Galería"; break;

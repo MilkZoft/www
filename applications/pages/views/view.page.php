@@ -3,8 +3,8 @@
 			<div id="pages" class="grid_9">
 				<a name="top"></a>
 				
-				<p>
-					<?php print $content; ?>
+				<p>	
+					<?php print bbCode($content); ?>
 				</p>
 				
 				<?php
