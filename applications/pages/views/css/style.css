@@ -181,23 +181,18 @@ div.reserve a {
 	margin-left: 30px;
 }
 
-#thumbs1 ul, #thumbs2 ul, #thumbs3 ul {
+#thumbs1 ul, #thumbs2 ul, #thumbs3 ul, #thumbs4 ul {
 	width: 400px;
 	margin: 0 !important;
 }
 
-#thumbs1 ul li, #thumbs2 ul li, #thumbs3 ul li{
+#thumbs1 ul li, #thumbs2 ul li, #thumbs3 ul li, #thumbs4 ul li {
 	display: inline !important;
 	margin: 0 !important;
 	margin-left: 10px !important;
 }
 
-#thumbs1 ul li a img, #thumbs2 ul li a img, #thumbs3 ul li a img{
-	margin-top: -60px;
-	
-}
-
-#thumbs4 ul li a img, #thumbs4 ul li a img, #thumbs4 ul li a img{
+#thumbs1 ul li a img, #thumbs2 ul li a img, #thumbs3 ul li a img, #thumbs4 ul li a img{
 	margin-top: -60px;
 	
 }
