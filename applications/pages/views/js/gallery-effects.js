@@ -93,4 +93,32 @@ $(document).ready(function(){
 		
 	}
 	
+	$('#thumbs4 ul li a').hover(
+		function() {
+			var currentBigImage = $('#bigpic4 img').attr('src');
+			var newBigImage = $(this).attr('href');
+			var currentThumbSrc = $(this).attr('rel');
+			switchImage4(newBigImage, currentBigImage, currentThumbSrc);
+		},
+		function() {}
+	);
+
+	
+	function switchImage4(imageHref, currentBigImage, currentThumbSrc) {
+		 
+		var theBigImage = $('#bigpic4 img');
+		
+		if (imageHref != currentBigImage) {
+		
+			theBigImage.fadeOut(250, function(){
+				theBigImage.attr('src', imageHref).fadeIn(250);
+				var newImageDesc = $("#thumbs4 ul li a img[src='"+currentThumbSrc+"']").attr('alt');
+				$('p#desc').empty().html(newImageDesc);
+			});
+			
+			
+		}
+		
+	}
+	
 });
