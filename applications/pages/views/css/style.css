@@ -112,6 +112,11 @@
 	font-size: 13px;
 }
 
+/* --- view.services ---- */
+#services {
+	font-size: 20px;
+}
+
 /* --- view.tours ---*/
 #tour-1 { background-image: url(../images/t1.png); }
 #tour-2 { background-image: url(../images/t2.png); }
