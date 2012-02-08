@@ -203,3 +203,62 @@ div.reserve a {
 	margin-top: -60px;
 	
 }
+
+
+/*Other Gallery*/
+
+#gallery { background-image: url(../images/hospedaje-4.png); }
+
+
+#gallery p { margin-left: 400px; }
+
+
+#gallery {
+	background-repeat: no-repeat;
+	height: 393px;
+}
+
+#gallery ul {
+	margin-left: 380px;
+	padding-top: 60px;
+	color: #5E4D31;
+	list-style: none;
+	font-size: 13px;
+}
+
+.wrap {
+	width: 380px;
+	height: 360px;
+	float: left;
+}
+
+#bigpic {
+	margin-top: 50px;
+	margin-left: 25px;
+}
+
+#thumbs {
+	#border: 1px solid blue;
+	height: 100px;
+	width: 350px;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+#thumbs ul {
+	width: 400px;
+	margin: 0 !important;
+}
+
+#thumbs ul li {
+	display: inline !important;
+	margin: 0 !important;
+	margin-left: 10px !important;
+}
+
+#thumbs ul li a img {
+	margin-top: -60px;
+	
+}
+
+
