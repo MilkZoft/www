@@ -228,7 +228,7 @@ div.reserve a {
 .wrap {
 	width: 380px;
 	height: 360px;
-	margin: 0 auto;
+	margin-left: 150px;
 }
 
 #bigpic {
