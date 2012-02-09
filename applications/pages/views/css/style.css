@@ -207,10 +207,10 @@ div.reserve a {
 
 /*Other Gallery*/
 
-/*
+
 #gallery { background-image: url(../images/hospedaje-4.png); }
-*/
-/*
+
+
 #gallery {
 	background-repeat: no-repeat;
 	height: 393px;
@@ -224,6 +224,7 @@ div.reserve a {
 	list-style: none;
 	font-size: 13px;
 }
+
 
 .wrap {
 	width: 600px;
