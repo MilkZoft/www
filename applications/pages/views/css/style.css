@@ -232,7 +232,7 @@ div.reserve a {
 	margin-left: 80px;
 }
 
-#bigpic {
+.wrapper div #bigpic {
 	margin-top: 50px;
 	margin-left: 30px;
 }
