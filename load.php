@@ -38,7 +38,7 @@ if(is_array($data)) {
 	if(whichLanguage() === _webLanguage) { 
 		define("_webLang", $data[0]["Lang"]);
 	} else {
-		define("_webLang", getXMLang(whichLanguage(), FALSE));
+		define("_webLang", getLang(whichLanguage(), FALSE));
 	}
 
 	define("_webName", 		      $data[0]["Name"]);
